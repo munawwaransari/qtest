@@ -1,0 +1,229 @@
+/*
+	Author: munawwar_ali@yahoo.com
+*/
+
+body{
+	height: 100%;
+	position: absolute;
+	flex-direction: column;
+}
+
+.theme-dark {
+	background-color: black;
+	filter: invert(1);
+	-webkit-filter: invert(0.85);
+}
+
+.theme-grayscale {
+	background-color: transparent;
+	filter: grayscale(0.9);
+	-webkit-filter: grayscale(1);
+}
+
+.theme-sepia {
+	background-color: transparent;
+	filter: sepia(1);
+	-webkit-filter: sepia(0.9);
+}
+
+.theme-saturation {
+	background-color: transparent;
+	filter: saturate(0.5);
+	-webkit-filter: saturate(0.5);
+}
+
+.play-controls {
+	
+}
+
+.containerHead {
+	margin-top:0; 
+	padding:0;width:100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.containerHead:hover {
+	background-color: #D6EEB4;
+}
+
+.containerHead > img {
+	width:14px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:4px;
+}
+
+.toolDiv {
+	padding: 12px;
+	position: relative;	
+	flex-direction: row;
+}
+body, .toolDiv {
+	width: 100%;
+	display: block;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#tool-description, .toolSpan {
+	padding-top: 4px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.desktop .toolSpan,.tool {
+	font-size: 14px;
+	height: 24px;
+}
+.mobile .toolSpan,.tool {
+	font-size: 26px;
+}
+
+.desktop img {
+	width: 32px;
+	height: auto;
+}
+.mobile img {
+	width: 36px;
+	height: auto;
+}
+
+.tool{
+	padding: 8px;
+}
+.tooltiptext{
+	position: relative;
+	margin-top: 20px;
+}
+.tool-menu {
+	background-color: black;
+	left: cursor.style.left;
+	top: cursor.style.top;
+	z-index: 1;
+	padding: 10px;
+	border-radius: 6px;
+}
+.menuitem {
+  color: white;
+  text-align: center;
+  padding: 4px 2px;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 14x;
+  max-width: 300px;
+}
+.menuitem:hover {
+	color: yellow;
+	font-size: 18px;
+	font-style: bold	;
+}
+
+.reading-pane{
+	position: relative;
+	width: 100%;
+	height: 100%; 
+}
+.menu-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	z-index: 1;
+}
+
+/* Floating divs */
+.chapter-card {
+	  float: left; 
+	  padding: 8px;
+	  margin: 10px;
+	  box-sizing: border-box; 
+	  background-color: lightblue; 
+	  border: 2px solid lightgray;
+	  border-radius: 25px;
+	  cursor: pointer;
+	  text-align: center;
+	  z-index: 1;
+}
+
+.chapter-card:hover {
+	  margin: 10px;
+	  border: 2px solid indigo;
+	  border-radius: 25px;
+	  box-shadow: 1px 1px;
+	  cursor: pointer;
+	  text-align: center;
+	  
+}
+
+.chapter-card:hover .subnav-content  {
+  display: flex;
+}
+
+.subnav-content {
+	display: none;
+	flex-wrap: wrap;
+	position: absolute;
+	padding: 4px;
+	width: 300px;
+	background-color: lightblue;
+	margin-top: 10px;
+	margin-left: -72px;
+	border: 2px solid lightgray;
+	border-radius: 12px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.subnav-content .subNav {
+	width: 100px;
+	background-color: lightblue;
+	padding: 6px;
+	z-index: 1;
+}
+
+.subnav-content .subNav:hover {
+	background-color: gray;
+	width: 100px;
+	font-weight:: bold;
+	padding: 6px;
+	color: white;
+	z-index: 1;
+}
+
+.isearch {
+	width:300px;
+	height: 32px;
+	font-size: 20px;
+	padding: 4px;
+	margin: auto;
+	vertical-align: middle;
+}
+
+/* Clear text icon */
+input[type="reset"] + input[type="text"]:empty{
+     display: none;
+}
+
+input[type="reset"]
+{
+  background-image: url( ../images/cleartxt.png );
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  left: -24px;
+} 

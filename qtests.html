@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+	<link rel="stylesheet" type="text/css" href="styles/quizlib-styles.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="styles/tree.css" media="screen">
+	<title>Arabic Quiz</title>
+	<script src="scripts/jquery/jquery-3.7.1.min.js"></script>
+	<script src="scripts/data-util.js"></script>
+	<script>
+	window.onload = function(){
+	
+	  var toggler = document.getElementsByClassName("caret");
+    for (var i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("caret-down");
+        });
+    }
+	  var cat_data = {};
+	  
+	  loadHtmlData(getLocationPath()+"data/categories.csv", function(res){
+	      var categories = res.split("\n");
+	      //console.log("cat count = " + categories.length);
+	      categories.forEach(function(cat, index){
+	        if(cat && cat.length > 0){
+	           var cdata = cat.split(",");
+	           if(cdata && cdata.length > 2){
+	             cat_data[cdata[1]] = { "cat": cdata[0], "file": cdata[2] }; 
+	             //console.log(cat_data[cdata[1]]);
+	           }
+	        }
+	      });
+	      
+	      // Load Cat Divs
+	      for (const key in cat_data) {
+          console.log(`Key: ${key}, Value: ${cat_data[key]}`);
+          var qDiv = $('<div class="qcard">'+
+                         '<div class="qcontainer">'+
+                            '<h4><b>'+cat_data[key].cat+'</b></h4>'+
+                            '<p>('+key+')</p>'+
+                         '</div>'+
+                      '</div>');
+          qDiv.on("click", function(){ 
+            openQ(key, cat_data[key].cat, cat_data[key].file); 
+          });
+          $(".qcards").append(qDiv);
+        }
+	  });	
+	  
+	};
+		
+	function openQ(category, topic, file){
+		var langOption = "en-US";
+		if(parent){
+			var data_path = getLocationPath() + file;
+			var abs_path = getLocationPath() + 'quiz.html?&topic=' + topic + '&category=' + category + '&data=' + data_path;
+			parent.openInline(abs_path);
+		}else{	
+			var data_path = getLocationPath() + file;
+			var abs_path = getLocationPath() + 'quiz.html?&topic=' + topic + '&category=' + category + '&data=' + data_path;
+			window.open(abs_path, "_blank");
+		}
+	}
+	</script>
+</head>
+<body>
+ <div class="qcards">
+</body>
+</html>

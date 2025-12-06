@@ -1,0 +1,187 @@
+#
+# Business mathematics - Simple Interest, Compound Interest
+# Sample Questions, Answers, and notes
+#
+- 1
+In how many years, simple interest on 25000 at an  interest rate 11% p.a. would be 33000
+
+[A] 140
+[B] 130
+[C] 120
+[D] 110
+C
+~
+Simple Interest Formula: S.I. = (P x t x r/100) 
+
+Given:
+	P = 25000,  r=11,   S.I. = 33000
+Therefore
+	     33000    = 25000 x 11/100 x t
+	     
+	     33000    = 25 x 11 t
+	     
+	     33000                  3000
+	 ------------- = t    =>   ------ = t  => 120 = t
+	   25 x 11                   25
+
+		
+~
+- 2
+Compute the interest on principal 25000 compounded every month at an interest rate of 5% p.a., for a period of 2 years.
+
+[A] 26025
+[B] 27020
+[C] 27630
+[D] 27624
+D
+~
+Compound Interest Formula: CI = A - P   where  Final Amount (A) = P x (1+(r/n)/100)^{n x t}
+
+Given:
+	P = 25000      r = 5    
+	t = 2 years    n = 12  (since interest is calculated every month, so 12 times in a  year) 	
+Therefore
+	Final Amount = P x (1+(r/n)/100)^{n x t}
+		   = 25000 x (1 + (5/12)/100)^{12 x 2}
+		   = 25000 x (1 + (1/240)^24)
+		   = 25000 x 1.1
+		   = 27623.525 => approx 27624
+~
+- 3
+What is the difference between the compound interest and simple interest on ₹3000 at a 11% rate of interest for 2 years?
+Note: the compound interest is calculated annually.
+
+[A] 600
+[B] 530
+[C] 030
+[D] 130
+C
+~
+Simple interest is calculated only on the initial principal amount, resulting in linear growth.
+
+Compound interest is calculated on the principal amount plus any accumulated interest, leading to exponential growth over time. 
+
+Compound interest grows faster and is ideal for long-term investments, while simple interest is more beneficial for borrowers seeking predictable and lower costs on loans. 
+
+Simple Interest Formula: S.I. = (P x t x r)/100 , 
+	where 
+	P is principal, t is time, and r is the rate.
+
+Compound Interest Formula: CI = A - P  
+	where  A = P x (1+(r/n)/100)^{nxt}
+	or     A = P x (1+r/100)^t        when n=1
+	where 
+	A is the final amount, P is the principal, 
+	r is the annual interest rate ; n is number of times compounded interest is calculated
+	t is the number of years.
+
+Given:
+	P = 3000	r=11		t=2 years     n = 1  (annual so once in a year) 
+	
+	Simple Interest = S.I = (P x T x r)/ = 100 = 3000 x 2 x 10/100 = 600
+	
+	A = P x (1+r/100)^t = P x (1+10/100)^2 = 3000 x (1.1)^2  = 3000 x 1.21 = 3630
+	Compound Interest = A - P = 3630 - 3000 = 630
+
+	So the difference between SI and CI = CI - SI
+				            = 630 - 600 = 30 
+~
+- 4
+What is the difference between the compound interest and simple interest on ₹3000 at a 11% rate of interest for 2 years?
+Note: the compound interest is calculated monthly.
+Choose the best answer.
+
+[A] 30
+[B] 61
+[C] 60
+[D] 31
+B
+~
+Simple interest is calculated only on the initial principal amount, resulting in linear growth.
+
+Compound interest is calculated on the principal amount plus any accumulated interest, leading to exponential growth over time. 
+
+Compound interest grows faster and is ideal for long-term investments, while simple interest is more beneficial for borrowers seeking predictable and lower costs on loans. 
+
+Simple Interest Formula: S.I. = (P x t x r)/100 , 
+	where 
+	P is principal, t is time, and r is the rate.
+
+Compound Interest Formula: CI = A - P  
+	where  A = P x (1+(r/n)/100)^{n x t}
+	or     A = P x (1+r/100)^t        when n=1
+	where 
+	A is the final amount, P is the principal, 
+	r is the annual interest rate ; n is number of times compounded interest is calculated
+	t is the number of years.
+
+Given:
+	P = 3000	r=11		t=2 years     n = 12  (every month so 12 times a year) 
+	
+	Simple Interest = S.I = (P x T x r)/ = 100 = 3000 x 2 x 10/100 = 600
+	
+	A = P x (1+(r/n)/100)^{nxt} 
+	  = P x (1+(10/12)/100)^(12 x 2)
+	  = 3000 x (1+1/120)^24 
+	  = 3661 (approx)
+	  
+	Compound Interest = A - P = 3661 - 3000 = 661 (approx)
+
+	So the difference between SI and CI = CI - SI
+				            = 661 - 600 = 61 (approx) 
+~
+- 5
+A man borrows a sum of money at a simple interest of 6% for the first 2 years, 8% for the next 4 years, and 10% for the period beyond 6 years. If he pays a total of ₹7400 in interest at the end of 9 years, what was the principal amount he borrowed?
+
+[A] 11000
+[B] 5000 
+[C] 10000
+[D] 1000
+C
+~
+Solution:
+Calculate the interest for each time period and then sum them up.
+Given:
+	Total period = t = 9 years
+	Period 1 = t1 = 2 years	  at the rate = r1 = 6%
+	Period 2 = t2 = 4 years	  at the rate = r2 = 8%
+	Period 3 (beyond 6 years) = t3 = (9-6) = 3 years at the rate = r3 = 10%
+	Total Interest = 7400
+	
+	Total Interest = Simple interest of all three periods added together
+            = (P x r1 x t1)/100 + (P x r2 x t2)/100 + (P x r3 x t3)/100
+            = (P x 6 x 2)/100 + (P x 8 x 4)/100 + (P x 10 x 3)/100
+            = 12P/100 + 32P/100 + 30P/100 = (12P+32P+30P)/100 
+            = 74P/100
+        since total interest is given
+            74P/100 = 7400
+        => P = (7400 x 100) / 74 = 100 x 100 
+             = 10000    
+~
+- 6
+A man lends a certain sum of money at simple interest. Rate of interest for first one and a half years is 10%, for next 6 months is 8%, and after that 6%, if he received Rs. 31000 as interest at the end of 4 years. What will be the principal?
+
+[A] 10000
+[B] 110000
+[C] 1000
+[D] 100000
+D
+~
+Calculate the interest for each time period and then sum them up.
+Given:
+	Use Simple interest for calculation.
+	Total period = T = 4 years
+	Period 1 = t1 = 1.5 years,  		rate = r1 = 10% 
+	Period 2 = t2 = 6 months = 0.5 years,   rate = r2 = 8%
+	Period 3 = t3 (remaining) = 4 - (1.5+0.5) = 2 years,  rate = r1 = 6%
+	Total Interest = 22000
+	
+	Total Interest = Simple interest of all three periods added together
+            = (P x r1 x t1)/100 + (P x r2 x t2)/100 + (P x r3 x t3)/100
+            = (P x 10 x 1.5)/100 + (P x 8 x 0.5)/100 + (P x 6 x 2)/100
+            = 15P/100 + 4P/100 + 12P/100 = 31P/100
+        since total interest is given
+            31P/100 = 31100
+        => P = (31000 x 100) / 31 = 1000 x 100 
+             = 100000    
+~

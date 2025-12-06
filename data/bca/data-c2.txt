@@ -1,0 +1,511 @@
+#
+# C Language
+# Sample Questions, Answers, and notes
+#
+- 1
+Consider the following C code, what should be used instead of (?) on LINE 10
+
+LINE  1: int n, factorial = 1;
+LINE  2: 
+LINE  3: printf("Enter a non-negative integer: ");
+LINE  4: scanf("%d", &n);
+LINE  5:
+LINE  6: if (n < 0) {
+LINE  7:   printf("Error! Factorial of a negative number doesn't exist.\n");
+LINE  8: } else {
+LINE  9:   // Complete the code logic here to calculate factorial
+LINE 10:   for (?) {
+LINE 11:      factorial *= i;
+LINE 12:   }
+LINE 13: }
+
+[A] int i = 0; i < n; ++i
+[B] int i = 1; i < n; ++i
+[C] int i = 2; i <= n; ++i
+[D] int i = 3; i <= n; ++i
+C
+~
+Option A starts with i=0, so the final product with factorial will always be zero
+Option B has a condition which will exit the loop earilier (e.g. if n=3, loop will iterate only for 1 and 2)
+Option C will iterate for all values correctly (note that loop is optimized to start from 2 and not 1)
+Option D is incorrect as it starts from 3 and will skip 2 in the final product
+So the correct answer is option C 
+~
+- 2
+Consider following C code. 
+What should be the correct condition on LINE 13 (replace condition? with actual condition)
+
+LINE  1: int isPrime(int n) {
+LINE  2:     if (n <= 1) {
+LINE  3:         return 0; // 0 and 1 are not prime numbers
+LINE  4:     }
+LINE  5:     if (n <= 3) {
+LINE  6:         return 1; // 2 and 3 are prime numbers
+LINE  7:     }
+LINE  8:     if (n % 2 == 0 || n % 3 == 0) {
+LINE  9:         return 0; // Eliminate multiples of 2 and 3 quickly
+LINE 10:     }
+LINE 11:     // Check for divisors from 5 up to sqrt(n)
+LINE 12:     // We increment by 6 because all prime numbers greater than 3 can be expressed in the form 6k ± 1
+LINE 13:     for (int i = 5; (condition?); i = i + 6) {
+LINE 14:         if (n % i == 0 || n % (i + 2) == 0) {
+LINE 15:             return 0; // Not prime if divisible by i or i+2
+LINE 16:         }
+LINE 17:     }
+LINE 18:     return 1; // If no divisors found, the number is prime
+LINE 19: }
+
+[A] i <= n
+[B] i <= n * n
+[C] i > n
+[D] i * i <= n
+D
+~
+Comment on LINE 11 states // Check for divisors from 5 up to sqrt(n)
+So value of the condition should be i <= sgrt(n). 
+It can also be written as i * i <= n  (taking square on both sides).
+~
+- 3
+Consider following C code.
+What statement would calculate the correct number of elements in the array.
+
+LINE  1: // Declare and initialize an array
+LINE  2: int arr[] = {23, 12, 45, 20, 90, 89, 95, 32, 65, 19};
+LINE  3: int n = ? // Calculate the size of the array
+
+[A] sizeof(arr);
+[B] sizeof(arr[0]);
+[C] sizeof(arr[0]) / sizeof(arr);
+[D] sizeof(arr) / sizeof(arr[9]);
+D
+~
+The sizeof operator in C returns the total memory allocated to an array pointer. The returned value depends on the data type of the array as each element is allocated size of the data type. So in this example, int data type takes 4 bytes of memory for each element, and there are 10 elements, so the sizeof(arr) will return 4*10 = 40. 
+
+In order to get the correct number of elements, the total size must be divided by size of an element. This can be done by dividing the total size by size of any one of the elements. Generally 0th element is taken, but any element from the array can be taken provided it is within the array limits.  
+~
+- 4
+Consider following C code. The code tries to find the maximum element from the array.
+Complete the logic at LINE 11. Choose the best answer.
+
+LINE  1: // Declare and initialize an array
+LINE  2: int arr[] = {23, 12, 45, 20, 90, 89, 95, 32, 65, 19};
+LINE  3: int n = sizeof(arr) / sizeof(arr[0]); // Calculate the size of the array
+LINE  4:
+LINE  5:// Initialize 'max_element' with the first element of the array
+LINE  6:int max_element = arr[0];
+LINE  7:
+LINE  8:// Iterate through the array starting from the second element
+LINE  9:for (int i = 1; i < n; i++) {
+LINE 10:    // If the current element is greater than 'max_element', update 'max_element'
+LINE 11:    // ?
+LINE 12:    // ? 
+LINE 13:    //?    
+LINE 14:}
+LINE 15:
+LINE 16:// Print the maximum element
+LINE 17:printf("The maximum element in the array is: %d\n", max_element);
+LINE 18:
+LINE 19:return 0;
+
+[A] if (arr[i] <= max_element) {
+       max_element = arr[i];
+    }
+[B]  if (arr[i] < max_element) {
+       max_element = arr[i];
+    }
+[C]  if (arr[i] > max_element) {
+       max_element = arr[i];
+    }
+[D]  if (arr[i] >= max_element) {
+       max_element = arr[i];
+    }
+C
+~
+As the code tries to find the maximum value, the condition should try to find a value from the array (arr[i]) to be greater than current value of max_element. In the given example, both [C] and [D] satisfy the condition to find maximum value; however best answer would be option [C] as it discards the value which is equal to max as it would save unnecessary assignment operation when the values are same. 
+~
+- 5
+Consider the following C code.
+Complete the logic at LINE 6.
+
+LINE  1: void printMatrix(int matrix[][], int cols, int rows)
+LINE  2: {
+LINE  3:   printf("\nThe matrix is:\n");
+LINE  4:   for (int i = 0; i < rows; i++) {
+LINE  5:      for (int j = 0; j < cols; j++) {
+LINE  6:          int**base=&matrix[0][0];
+LINE  7:          int val = ....? //complete logic
+LINE  8:          printf("%d\t", val); // Use \t for tab spacing
+LINE  9:      }
+LINE 10:      printf("\n"); // Newline after each row
+LINE 11:   }
+LINE 12:}
+    
+[A] base+(i*cols+j);
+[B] base+(j*cols+i);
+[C] base+(i*cols+j)*sizeof(int);
+[D] base+(j*cols+i)*sizeof(int);
+C
+~
+The element sequence in a integer** depends on how the memory was allocated to the array. Generally, a single block of memory is allocated [e.g. int**array = malloc(sizeof(element)*rows*cols) ]. In this case, the elements are organized as given below:
+
+For example, when rows = 3, cols = 3 (for integer values, i as row index ; j as column index):
+
+	                                  cols(j)    | col1(j=0) | col2 (j=1) | col3 (j=2) |
+	                                             |-----------+------------+------------|
+    base+(i*cols+j)*sizeof(element)  =>   row1 (i=0) | (elemen1) | (element2) | (element3) |
+    base+(i*cols+j)*sizeof(element)  =>   row2 (i=1) | (elemen4) | (element5) | (element6) |
+    base+(i*cols+j)*sizeof(element)  =>   row3 (i=2) | (elemen7) | (element8) | (element9) |
+    
+    So address of element at (2,2) => base+(2*3+2)*4 = base+32 
+    So address of element at (2,0) => base+(2*3+0)*4 = base+24
+~
+- 6
+Consider the following C code.
+Choose the correct condition at LINE 5.
+
+LINE  1: int check_matrix_compatible(int m1_rows, int m1_cols,int m2_rows, int m2_cols)
+LINE  2: {
+LINE  3:   if(m1_rows > 0 && m2_rows > 0 && m1_cols > 0 && m2_cols < 0) 
+LINE  4:   {
+LINE  5:      if(condition...?)      
+LINE  6:      {
+LINE  7:         return 1;    
+LINE  8:      }
+LINE  9:   }
+LINE 10:   return 0;
+LINE 11: }
+
+[A] m1_rows == m2_rows
+[B] m1_cols == m2_cols
+[C] m1_rows == m2_cols
+[D] m1_cols == m2_rows
+D
+~
+Two matrices M1 and M2, with sizes R1 x C1 and R2 x C2 respectively, are compatible if: C1 == R2.
+If matrices are compatible, their multiplication is possible.
+~
+- 7
+Choose correct expression to evaluate quadratic equation in C.
+[A] root1 = (-b + sqrt(b*b - 4*a*c)) / 2*a
+    root2 = (-b - sqrt(b*b - 4*a*c)) / 2*a
+[B] root1 = -b + sqrt(b*b - 4*a*c) / 2*a
+    root2 = -b - sqrt(b*b - 4*a*c) / 2*a
+[C] root = -b - sqrt(b*b - 4*a*c) / 2*a
+[D] root = -b + sqrt(b*b - 4*a*c) / 2*a   
+A
+~
+Quadratic equation formula:
+
+               	        /--------------                      	   /--------------
+               (-b) + \/ (b*b - 4ac)                      (-b) - \/ (b*b - 4ac)
+    root 1 =  --------------------------      root 2 =  --------------------------
+                       2a                                           2a
+~
+- 8
+Consider following C code.
+Choose correct logic at LINE 11.
+
+LINE  1: void bubbleSort(int arr[], int n) {
+LINE  2:     int i, j, temp;
+LINE  3:     for (i = 0; i < n - 1; i++) {
+LINE  4:         // Last i elements are already in place
+LINE  5:         for (j = 0; j < n - i - 1; j++) {
+LINE  6:             // Swap if the element found is greater than the next element
+LINE  7:             if (arr[j] > arr[j + 1]) {
+LINE  8:                 // swap elements
+LINE  9:             }
+LINE 10:         }
+LINE 11:     }
+LINE 12: }
+
+[A] temp = arr[i]; 
+    arr[i] = arr[i + 1]; 
+    arr[i + 1] = temp;
+[B] temp = arr[j]; 
+    arr[j + 1] = temp;
+    arr[j] = arr[j + 1];
+[C] temp = arr[j]; 
+    arr[j] = arr[j + 1]; 
+    arr[j + 1] = temp;
+[D] temp = arr[j + 1]; 
+    arr[j] = arr[j + 1]; 
+    arr[j + 1] = temp;
+C
+~
+Swapping two variable by value in C is done by using a temporary variable.
+    temp = first_variable;		// store value of first variable for later use
+    first_variable = second_variable;   // change value of first variable to second_variable
+    second_variable = temp;             // Now change value of second_variable to temp (which is value of first_variable)
+~
+- 9
+Consider following C code.
+What will be the value of counter after both loops executed.
+
+[A] 9
+[B] 10
+[C] 11
+[D] 12
+B
+int n = 5;
+int counter = 0;
+for (int i = 0; i < n - 1; i++) {
+  for (int j = 0; j < n - i - 1; j++) {
+    counter++;
+  }//inner loop
+}//outer loop
+printf("%d\n", counter);
+~
+when i = 0  => inner loop goes from 0 .. (5-0-1) => 0..4  => inner loop runs for j=0,1,2,3 => counter = 4
+when i = 1  => inner loop goes from 0 .. (5-1-1) => 0..3  => inner loop runs for j=0,1,2 => counter = 7
+when i = 2  => inner loop goes from 0 .. (5-2-1) => 0..2  => inner loop runs for j=0,1 => counter = 9
+when i = 3  => inner loop goes from 0 .. (5-3-1) => 0..1  => inner loop runs for j=0 => counter = 10
+when i = 4 => outer loop exits
+
+counter value would be printed as 10
+~
+- 10
+Consider following C code.
+Choose the correct logic at LINE 6 for sorting values in descending order
+
+LINE 1: int compareIntegers(const void *a, const void *b) {
+LINE 2:     // Cast the void pointers to integer pointers
+LINE 3:     const int *valA = (const int *)a;
+LINE 4:     const int *valB = (const int *)b;
+LINE 5: 
+LINE 6:     return ...?
+LINE 7: }
+
+[A] valA - valB;
+[B] valB - valA;
+[C] *valA - *valB;
+[D] *valB - *valA;
+D
+~
+The compare function values for ascending order: val1 - val2
+    0             => equals         (both same)
+    negative      => less than      (val1 < val2)
+    positive      => greater than   (val1 > val2)
+    
+In order to sort in descending order, the order of subtraction can be reversed: val2 - val1
+    0             => equals        (both same)
+    negative      => less than     (val1 > val2)
+    positive      => greater than  (val1 < val2)
+~
+- 11
+Consider following C code. 
+What will be printed.
+[A] 5.5
+[B] 5.0
+[C] 5
+[D] garbage value
+D
+float num_float = 5.5;
+printf("Value: %d\n", num_float);
+~
+printf is a variadic function that doesn't inherently know the type of data you pass to it. It relies entirely on the format specifiers in the format string to interpret the bytes pushed onto the function call stack.
+
+When you use %d, printf interprets the memory location corresponding to num_float as if it holds an integer value.
+
+The code printf("Value: %d\n", num_float); prints a "random" or unintended value because of a mismatch between the format specifier used and the data type of the argument provided. 
+~
+- 12
+Consider the following declaration:
+
+  int   a;
+  int  *b = &a;
+  int **c = &b;
+  
+The following program fragment
+
+a=4;
+**c=5;
+
+[A] Does not change value of a
+[B] Assigns address of c to a
+[C] Assigns value of b to a
+[D] Assigns 5 to a
+D
+~
+Here, a is declared as integer variable whereas b and c are declared as pointers.
+b is a pointer to integer a, and c is a pointer to pointer of integer a;
+
+Here a == *b == **c  => all refer to value of variable a. 
+Changing any of these will change value of a. 
+~
+- 13
+What will be the output of below code ?
+[A] 4
+[B] 8
+[C] 32
+[D] 20
+D
+   union Data {
+        int i;
+        float f;
+        char s[20];
+    };
+
+    int main() {
+        union Data data;
+        printf("Size of union Data: %lu bytes\n", sizeof(data));
+        return 0;
+    }
+~
+A union in C is allocated the size from its memeber that has maximum size.
+Here char s[20] has maximum size as sizeof(i) = 4 and sizeof(f) = 4;
+~
+- 14
+What will be the output of below code ?
+[A] 1 2 0 0
+[B] 0 1 0 2
+[C] 1 0 2 0
+[D] 1 1 2 2
+C
+int main()
+{
+ struct {int a[2];} arr[] = {{1},{2}};
+ printf("%d %d %d %d",arr[0].a[0],arr[0].a[1],arr[1].a[0],arr[1].a[1]);
+ return 0;
+}
+~
+Here an array of struct is initialized with {{1},{2}}.
+  so the initialization will be:
+  
+  	arr[0] <= {1}  and arr[1] <= {2}
+  
+  Members of the struct will be initilized as:
+  
+  	arr[0].a[0] = {1}   and arr[1].a[0] = {2}
+  
+  So the struct data woule be:
+  
+  	arr[0].a = [1 0]  and arr[1].a = [2 0]   (since the a has size of twp elements, so seconds one will be zero)
+~
+- 15
+Consider the following C declaration 
+ 
+ struct { 
+    short s[5];
+    union { 
+         float y; 
+         long z; 
+    }u; 
+ } t;
+
+Assume that objects of the type short, float and long occupy 2 bytes, 4 bytes and 8 bytes, respectively. The memory requirement for variable t, ignoring alignment considerations, is:
+
+[A] 22 bytes
+[B] 18 bytes
+[C] 14 bytes
+[D] 10 bytes
+B
+~
+Size of short s[5] => 5 * sizeof(short) => 5 * 2 = 10 bytes
+
+Size of union => max of float and long => max of (4, 8) => 8 bytes
+
+Total size of struct => 10 + 8 bytes = 18 bytes
+~
+- 16
+What will be the output of below code?
+[A] 1 2
+[B] 2 2
+[C] 0 0
+[D] 2 1
+B
+int main()
+{
+    union {
+        int i1;
+        int i2;
+    } myVar = {.i1 = 1, .i2 = 2};
+    
+    printf("%d %d", myVar.i1, myVar.i2);
+    
+    return 0;
+}
+~
+In C, unlike struct, a union is allocated memory only for the element having maximum size. Here since both members are integer data types, only 4 byte will be allocated as that is the maximum required to store a single integer value.
+
+When union is initialized, i1 is first set to 1. At this time both i1 and i2 have a value os 1.
+then when i2 is initialized, values of both i1 and i2 will change to 2.
+
+This is because in a union, all members point to the same memory address, as the memory is allocated only for the maximum size required by one of its members. All other member values will fit in that size.
+~
+- 17
+What will be the output of below code?
+[A] 8
+[B] 4
+[C] Compile time error
+C
+struct st
+{
+    int x;
+    static int y;
+};
+
+int main()
+{
+    printf("%d", sizeof(struct st));
+    return 0;
+}
+~
+In C, a struct member cannot be declared as static. The static keyword in C is a storage-class specifier, and it applies to variables or functions, not to individual members within a struct definition.
+~
+- 18
+Select what is not true about global variables.
+[A] They can be easily accessed and modified by any function without explicit passing as arguments.
+[B] They retain their values throughout the program's execution
+[C] Global variables should be used instead of local variables as they are easier to maintain
+[D] Changes to global variables can have unintended side effects in other parts of the program, making debugging more challenging.
+C
+~
+The assertion that global variables in C should be preferred over local variables for easier maintenance is generally incorrect. While global variables offer broad accessibility, their use often introduces complexities that hinder rather than aid maintainability.
+~
+- 19
+What will be the output of below code?
+[A] 10
+[B] 20
+[C] error
+A
+#include <stdio.h>
+
+int var = 10;
+
+void myFunction() {
+  {//scope
+  
+    int var = 20;
+    
+  }//end scope
+  
+  printf("%d\n", var);
+}
+
+int main() {
+    myFunction();
+    return 0;
+}
+~
+The local variable exists only within its specific scope (e.g., a function or a block of code). Once the execution leaves that scope, the local variable is destroyed, and the global variable with the same name becomes accessible again.
+~
+- 20
+Which of the following is the correct order of evaluation for the below expression?
+
+	z = x + y * z / 4 % 2 - 1
+
+[A] / * % - + =
+[B] * / % + - =
+[C] * % / - + =
+[D] * % / + - =
+B
+~
+Precedence of Arithmetic Operators (from highest to lowest):
+
+Parentheses (): Expressions enclosed in parentheses are evaluated first, overriding other precedence rules.
+Unary Plus + and Unary Minus -: These operators apply to a single operand and have higher precedence than binary arithmetic operators.
+
+Multiplication *, Division /, and Modulus %: These operators have equal precedence and are evaluated from left to right (associativity).
+
+Addition + and Subtraction -: These operators have the lowest precedence among arithmetic operators and are also evaluated from left to right (associativity).
+~

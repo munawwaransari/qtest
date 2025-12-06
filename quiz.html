@@ -1,0 +1,256 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes" />
+		<link rel="stylesheet" type="text/css" href="styles/quizlib-styles.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="styles/quizlib.css" media="screen">
+		<script src="scripts/jquery/jquery-3.7.1.min.js"></script>
+		<script>
+		  var qEOF = 0; 
+		  var qPrevIndex = -1, qIndex = 0, qNumber = 0, qCat, qTopic, qA, qCount = 0;
+		  var qLines = null;
+			var quizzesMap = [];
+			
+			window.onload = function(){
+				var category = qCat = decodeURI(getParamValue("category"));
+				var topicName = qTopic = decodeURI(getParamValue("topic"));
+				var data_path = decodeURI(getParamValue("data"));
+
+				console.log('param:category: ' + category);
+				console.log('param:topic: ' + topicName);
+				console.log('param:lang: ' + data_path);
+				
+				$("#topicHeading").text(`${category}-${topicName}`);
+				loadData(category, topicName, data_path);
+			};
+			
+			async function loadData(category, topicName, data_path){
+				try {
+				  if(qLines == null){
+					  const response = await fetch(data_path);
+					  if (!response.ok) {
+						  throw new Error(`HTTP error! Status: ${response.status}`);
+					  }
+   
+            qLines = await response.text();
+            if(!qLines)
+						  throw new Error(`error! Failed to read response`);
+	          qLines = qLines.split('\n');
+					}
+          nextQ();
+        } 
+			  catch (error) {
+				  console.error("Fetch error:", error);
+			  }
+			}
+			
+			function prevQ(){
+			  if( moveToPreviousQuestion() != -1)
+			    nextQ();
+			}
+			
+			function nextQ(){
+			  try
+			  {
+			     var userRes = $('input[name="opt"]');
+	         if(userRes.length > 0 && userRes.is(":checked") == false)
+	            return;
+	         
+	         if($("#btn-Chk").is(":visible")){
+	            checkAnswer(1);
+	         }
+			     showResults();
+			     
+			     $("#btn-Chk").hide();
+		       $("#qSolution").hide();
+		       qA = "";
+		       const map = loadTextIntoQuiz(qCat, qTopic);
+				   if(qEOF == 0){	  
+				      $("#btn-Chk").show();
+				      $("#qNumber").text("Question - "+ map.num);
+				      $("#qText").html(map.qText+"<br/>"+map.qCode);
+				      $("#qOptions").html(map.qOptions);
+				      $("#qSolution").html(map.qSol);
+				      qA = map.qAnswer;
+				   }
+				   else{
+		        //$("#btn-Result").show();
+		        $("#btn-Nxt").hide();
+		       }
+				} 
+				catch (error) {
+					  console.error("Fetch error:", error);
+				}
+			}
+			
+			function checkAnswer(flag){
+	        var userRes = $('input[name="opt"]:checked');
+	        if(userRes.length == 0)
+	          return;
+          
+          if(flag){
+            if(userRes.val() == qA)
+	            qCount++;
+	        }
+          else{
+	          // freeze
+	          $('input[name="opt"]').prop("disabled","true");
+	          $("#btn-Chk").hide();
+
+            if(userRes.val() === qA){
+	            qCount++;
+	            userRes.parent().css("background-color", "green");
+	            userRes.parent().css("color", "white");
+	          }else{
+	            userRes.parent().css("background-color", "red");
+	            userRes.parent().css("color", "white");
+	            
+	            var res = $('input[name="opt"][value="B"]');
+	            res.parent().css("background-color", "green");
+	            res.parent().css("color", "white");
+	          }
+	        }
+			}
+			
+			function loadTextIntoQuiz(cat, topic){
+  			moveToNextQuestion(qLines);
+  			if(qEOF == 0){
+  			  qNumber++;
+			    return {
+			      id : topic+"-"+cat,
+			      num: qNumber,
+			      topic : topic,
+			      category : cat,
+			      qText : readQuestion(),
+			      qOptions: readOptions(),
+			      qAnswer: readAnswer(),
+			      qCode: readCode(),
+			      qSol : readSolution()
+			    }
+			  }
+			}
+			
+			function readQuestion(){
+			  var qText = "";
+			  while(qLines[qIndex][0] != '['){
+			    qText+= qLines[qIndex] + '<br/>';
+			    qIndex++;
+			  }
+			  if(!qLines[qIndex]) qEOF = 1;
+			  return '<pre>'+qText+'</pre>';
+			}
+			
+			function readOptions(){
+			  var qRadio = "";
+			  while(qLines[qIndex][0] == '['){
+			    var  qOptions = qLines[qIndex] + "<br/>";
+			    var index = qIndex; 
+			    while(qLines[qIndex+1][0] == ' '){
+			      qIndex++;
+			      qOptions += qLines[qIndex] + "<br/>";
+			    }
+			    qRadio += '<div><input type="radio" id="'+qLines[index][1]+'" '+
+			                  'name="opt" value="'+qLines[index][1]+'">'+
+                     '<label for="'+qLines[index][1]+'">'+qOptions+'</label></div>';
+			    qIndex++;
+			  }
+			  if(!qLines[qIndex]) qEOF = 1;
+			  return qRadio;
+			}
+			
+			function readAnswer(){
+			  var a = qLines[qIndex];
+			  qIndex++;
+			  if(!qLines[qIndex]) qEOF = 1;
+			  return a;
+			}
+			
+			function readCode(){
+			  var qCode = "";
+			  while(qLines[qIndex][0] != '~'){
+			    qCode += qLines[qIndex]+ "<br/>";
+			    qIndex++;
+			  }
+			  if(!qLines[qIndex]) qEOF = 1;
+			  if(qCode.length > 0)
+			    return '<div style="margin:auto;text-align:left;"><Code>'+qCode+'</Code></div>';
+			  return "";
+			}
+			
+			function readSolution(){
+			  var qSol = "";
+			  if(qLines[qIndex] && qLines[qIndex][0] == '~') qIndex++;
+			  while(qLines[qIndex][0] != '~'){
+			    qSol+= qLines[qIndex] + "<br/>";
+			    qIndex++;
+			  }
+			  if(!qLines[qIndex]) qEOF = 1;
+			  return qSol;
+			}
+			
+			function moveToNextQuestion(){
+			  while(qLines[qIndex] && qLines[qIndex][0] != '-') 
+			    qIndex++;
+			  qPrevIndex = qIndex; 
+			  qIndex++;
+			  if(qIndex >= qLines.length || !qLines[qIndex])
+			    qEOF = 1;
+			}
+			
+			function moveToPreviousQuestion(){
+			  if(qPrevIndex != -1){
+			    qIndex = qPrevIndex;
+			    qNumber--;
+			    qPrevIndex = -1;
+			    return 1;
+			  }
+			  return -1;
+			}
+
+      function showResults(){
+        $("#quiz-score").text(qCount);
+        $("#quiz-max-score").text(qNumber);
+        if(qNumber > 0)
+          $("#quiz-percent").text((qCount / qNumber * 100.0).toFixed(1));
+        else
+          $("#quiz-percent").text("0");
+        $("#qresult").show();
+      }
+      
+      function getParamValue(paramName)
+			{
+				var url = window.location.search.substring(1); //get rid of "?" in querystring
+				var qArray = url.split('&'); //get key-value pairs
+				for (var i = 0; i < qArray.length; i++) 
+				{
+					var pArr = qArray[i].split('='); //split key and value
+					if (pArr[0] == paramName) 
+						return pArr[1]; //return value
+				}
+			}			
+		</script>
+        <title>Q-Test</title>
+		</script>
+    </head>
+
+    <body style="direction:ltr;">
+        <div id="topicHeading" style="background-color:#93C54B; font-weight: bold;"></div>
+		    <div id="qresult" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+        <div id="qNumber" style=";font-weight: bold;padding-top:10px;"></div>
+        <div id="qText" style="width:100%;padding-top:10px; text-align:left;"></div>
+        <div id="qOptions" style="width:100%;padding-top:10px;text-align:left;"></div>
+        <div id="qSolution" style="display:none;width:100%;padding-top:20px;text-align:left;"></div>
+		    <div id="quiz-buttons" class="card" style="text-align: center;">
+            <button id="btn-Chk" onclick="checkAnswer();">Check Answer</button>
+            <button onclick="$('#qSolution').toggle();">Solution/Hint</button> 
+            <!-- <button id="btn-Prv" onclick="prevQ();">Previous Question</button> -->
+            <button id="btn-Nxt" onclick="nextQ();">Next Question</button>
+            <!-- <button id="btn-Result" onclick="showResults()" style="display:none;">Results</button> -->
+        </div>
+    </body>
+</html>

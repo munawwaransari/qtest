@@ -1,0 +1,401 @@
+#
+# C Language
+# Sample Questions, Answers, and notes
+#
+- 1
+What will below code print ?
+[A] Compille time error
+[B] Random or "garbage" value as address
+[C] NULL value
+B
+void* ptr;
+printf("ptr = %p \n", ptr);
+~
+In C, an automatic variable or pointer (declared inside a function without the static keyword) is not explicitly initialized, its value is indeterminate. This means it contains whatever "garbage" value happened to be in that memory location before the variable was declared. Dereferencing an uninitialized pointer can lead to undefined behavior and crashes.
+~
+- 2
+What will below code print ?
+[A] Compille time error
+[B] Random address
+[C] NULL value
+C
+static void* ptr;
+printf("ptr = %p \n", ptr);
+~
+In C, variables and pointers with static storage duration (declared globally, or with the static keyword inside a function) are zero-initialized by default if not explicitly assigned a value. For pointers, this means they are initialized to a null pointer.
+~
+- 3
+What will below code print ?
+[A] Compille time error
+[B] Random or "garbage" value
+[C] NULL value
+B
+int a;
+int *ptr = &a;
+printf("value = %d \n", *ptr);
+~
+In C, an automatic variable or pointer (declared inside a function without the static keyword) is not explicitly initialized, its value is indeterminate. This means it contains whatever "garbage" value happened to be in that memory location before the variable was declared. Dereferencing an uninitialized pointer can lead to undefined behavior and crashes.
+~
+- 4
+What will be size of the struct my_struct?
+[A] 9
+[B] 12
+[C] 8
+A
+#pragma pack(1)
+struct my_struct {
+   int a;
+   float b;
+   char c; // padding ? 
+};
+#pragma pack()
+printf("size of my_struct = %ld\n", sizeof(struct my_struct));
+~
+The #pragma pack directive is a compiler-specific extension used to control the alignment of struct members. It allows a programmer to specify a maximum alignment boundary for members within a struct.
+
+With #pragma pack(1), the compiler is forced to pack the struct members on 1-byte boundaries, eliminating padding. In this case, sizeof(struct my_struct) would be 9 bytes (4 + 4 + 1).
+~
+- 5
+What will be size of the struct my_struct?
+[A] 9
+[B] 12
+[C] 8
+B
+struct my_struct {
+   int a;
+   float b;
+   char c; // padding ? 
+};
+printf("size of my_struct = %ld\n", sizeof(struct my_struct));
+~
+To ensure natural alignment for all members within a struct, the compiler may insert "padding" bytes. This padding ensures that each member starts at an address that is a multiple of its own size.
+
+Many systems, especially 32-bit architectures, have a default alignment of 4 bytes. This means data types like int (which are typically 4 bytes) are most efficiently accessed when their memory addresses are multiples of 4.
+
+In this example char type will be padded to make the size event to ensure natural alignment. Explicit padding can be defined using directive #pragma pack(n) if this behavior is not desired.
+~
+- 6
+What will be the value of *ptrA?
+[A] 100
+[B] 200
+[C] error
+C
+int a = 100;
+const int* ptrA = &a; // Pointer to a constant int
+*ptrA = 200;
+~
+const int* ptrA: Pointer to a constant integer (the value pointed to cannot be changed through p).
+~
+- 7
+What will be the value of *ptrA?
+[A] 100
+[B] 200
+[C] error
+B
+int a = 100;
+int* const ptrA = &a; // Constant pointer to int
+*ptrA = 200;
+printf("%d\n", *ptrA);
+~
+int* const ptrA: Constant pointer to an integer (the pointer itself cannot be reassigned to point to a different location). However, value can be modified through ptrA
+~
+- 8
+What will be the value of *ptrA?
+[A] 100
+[B] 200
+[C] error
+C
+int a = 100;
+const int* const ptrA = &a; // constant pointer to a constant int
+*ptrA = 200;
+~
+const int* const ptrA: Constant pointer to a constant integer (neither the value pointed to nor the pointer itself can be changed).
+~
+- 9
+What definition is required to use the below variable in another file?
+[A] extern int global_var;
+[B] global int global_var;
+[C] int global_var;
+A
+int global_var = 10;
+~
+When you have a global variable defined in one .c file and you want to use it in another .c file, you declare it with extern in the second file. This tells the compiler that the variable exists and will be linked during the linking phase, without allocating new memory for it in the current file.
+~
+- 10
+What will be the output of below code ?
+[A] true
+[B] false
+[C] 1
+[D] 0
+D
+int year = 1994;
+bool isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) ? true : false;   
+printf("%d\n", isLeap);
+~
+In C, boolean values are represented by integers: 0 for false and 1 (or any non-zero value) for true.
+The conditions given is trying to check a leap year (which is divisible by either 400 or 4 but not with 100).
+Since 1994 does not meet any conditions, the condition will be false and 0 will be output of printf.
+~
+- 11
+What will be the output of below code ?
+[A] 5
+[B] 20
+[C] 40
+[D] 120
+A
+int numbers[] = { 40, 20, 5, 120, 100 };
+int length = sizeof(numbers) / sizeof(numbers[0]);
+printf("%d\n", length);
+~
+The sizeof operator returns the total memory allocated to the variable. 
+An integer in C is allocated 4 bytes, so on this case sizeof(array) will return 4 * number of elements in the array, which will be 20; So the value in length would be 20 divided by the size of an in or 4; which will be 20 / 4 = 5.
+Hence the program will print the length of the array which will be 5.
+~
+- 12
+What will be the output of below code ?
+[A] 10
+[B] 5
+[C] 14
+[D] 12
+B
+int array[] = {10, 14, 5, 12};
+int value = INT_MAX;
+for(int i=0; i < 4; i++){
+   value = (value > array[i]) ? array[i] : value;
+}
+printf("%d\n", value);
+~
+The program is trying to find smallest number from the array. 
+The initial value of variable value is the MAX_INT (maximum integer value in C).
+Iteration 1 - 10 is greater than INT_MIN => 10
+Iteration 2 - 10 is not greater than 14  => 10
+Iteration 1 - 10 is greater than 5       => 5
+Iteration 1 -  5 is not greater than 12  => 5
+So value is printed as 5
+~
+- 13
+What will be the output of below code ?
+[A] 8
+[B] 9
+[C] 10
+[D] 11
+C
+int value= 10;
+printf("%d\n", value++);
+~
+The post-increment operator (++ after the variable) means the original value is used in the expression, and then the variable is incremented as a side effect. So the printf will use current value of the variable which is 10;
+~
+- 14
+What will be the output of below code ?
+[A] 8
+[B] 9
+[C] 10
+[D] 11
+D
+int value= 10;
+printf("%d\n", value++);
+~
+The pre-increment operator (++ before the variable) means the variable is incremented first and then the incremented value is used in the expression. So the printf will use incremented value of the variable which is 11;
+~
+- 15
+What will be the output of below code?
+[A] 10
+[B] 20
+[C] 30
+B
+int array[] ={10, 20, 30};
+int *ptr_to_a=array;
+int value = *(ptr_to_a + 1);
+printf("%d\n", value); 
+~
+In C, when a pointer is incremented using the + or ++ operator, its memory address is advanced by the size of the data type it points to, not by a single byte. This behavior is crucial for iterating through arrays or sequences of elements of a specific type. 
+
+So ptr_to_a + 1 will be incremented by the size of integer and after the increment, it will point to the next integer value in the array. Hence the value in the variable value would be 20.
+~
+- 16
+What will be the output of below code?
+[A] 100, 200
+[B] 100, 100
+[C] 200, 200
+A
+int a=100, b=200;
+int *tempA = &a, *tempB=&b;
+tempA = &b;
+&b = temp;
+printf("a=%d, b=%d\n", a, b);
+~
+~
+- 17
+What will be the output of below code?
+[A] 20
+[B] 10
+A
+void swap(int *ptr1, int *ptr2) 
+{
+   int *temp = ptr2;
+   ptr2 = ptr1;
+   ptr1 = temp;
+}
+int main() 
+{
+    int a=20, b=10;
+    swap(&a, &b);
+    printf("%d\n", a);
+}
+~
+If you attempt to swap the addresses themselves within a function by passing pointers to pointers, you would only be swapping the local copies of those pointers within the function. The original pointers in main would remain unchanged, and thus, the variables they point to would not be swapped.
+~
+- 18
+What will be the output of below code?
+[A] 20
+[B] 10
+B
+void swap(int *ptr1, int *ptr2) 
+{
+   int temp = *ptr2;
+   *ptr2 = *ptr1;
+   *ptr1 = temp;
+}
+int main() 
+{
+    int a=20, b=10;
+    swap(&a, &b);
+    printf("%d\n", a);
+}
+~
+In C, to effectively swap the values stored at two different memory addresses, you must use pointers and pass them by value to a function. This allows the function to modify the original variables through dereferencing.
+~
+- 19
+What will be the output produced by the following C code:
+[A] -1
+[B] 1
+[C] 0
+B
+int main()
+{
+    int array[5][5] = {0};
+    printf("%d",( (array == *array) && (*array == array[0]) ));
+    return 0;    
+}
+~
+In C, an array name, when used in most expressions, "decays" into a pointer to its first element. This behavior is often referred to as "array-to-pointer decay." This means that in many contexts, the array name effectively behaves like a pointer, allowing you to use pointer arithmetic and dereferencing to access array elements.
+~
+- 20
+What will be the output produced by the following C code?
+[A] 65 
+[B] 'A'
+[C] error
+B
+union Data {
+    int i;
+    char str[4];
+};
+
+int main() {
+
+    union Data data = {};
+    data.str[0] = 'A';
+    printf("data.i = %c\n", (char)data.i);
+    return 0;
+}
+~
+A union in C is a special data type that allows different data types to be stored in the same memory location. Unlike structures, where each member occupies its own distinct memory space, a union allocates memory only for its largest member, and all other members share that same memory. This means that at any given time, only one member of the union can hold a meaningful value.
+~
+- 21
+What will be the output produced by the following C code?
+[A] 65 
+[B] 'A'
+[C] error
+B
+typedef union {
+    int i;
+    float f;
+} Data;
+
+int main() {
+
+    Data d1 = {}, d2 = {};
+    d1.f = 10.0; d1.f = 0;
+    d2.f = 20.0; d2.f = 0;
+    printf("%d\n", d1.i+d2.i);
+    return 0;
+}
+~
+A union in C is a special data type that allows different data types to be stored in the same memory location. Unlike structures, where each member occupies its own distinct memory space, a union allocates memory only for its largest member, and all other members share that same memory. 
+
+In this example, when the memeber f is modified, the value of member i becomes invalid as they both are pointed to by the same address. As float member value is set to zero, integer member value will also become zero. If float value is set to anything else, integer value could not have been determined.  
+~
+- 22
+If the below program is run as follows, what will be the output of the program?
+./program 1 2 3 4
+[A] 5 
+[B] 4
+[C] ./program
+[D] 1
+C
+int main(int argc, char**argv)
+{
+  printf("%s\n", argv[0]);
+}
+~
+The main function in C can accept arguments from the command line, enabling programs to receive input at runtime.
+
+argc (Argument Count): This is an integer variable that stores the number of command-line arguments passed to the program, including the program's name itself. Its value will always be at least 1, as argv[0] always contains the program's name.
+
+argv (Argument Vector): This is an array of character pointers (or an array of strings). Each element in argv points to a string representing a single command-line argument. argv[0] typically contains the name of the executable program.
+~
+- 23
+How many times the loop will execute in below program?
+[A] 1 
+[B] 2
+[C] 3
+[D] 4
+C
+int a = 5, b = 10;
+int counter = 0;
+while(a != b)
+{
+  counter++;
+  if(a < b) a++; // 6, 7, 8    
+  if(b > a) b--; // 9, 8, 8
+} 
+printf("%d\n", counter);
+~
+~
+- 24
+How many times the loop will execute in below program?
+[A] 5 4 3 2 1
+[B] 5 4 3 2 1 0
+[C] 1 2 3 4 5
+[D] 0 1 2 3 4 5
+A
+// Recursive function
+int next_number(int prev) { 
+  if (prev > 0){
+    next_number(prev-1);
+  }
+  printf("%d ", prev);
+}
+
+void main()
+{
+  next_number(5);
+}
+~
+In C programming, a recursive function is a function that calls itself, either directly or indirectly, to solve a problem. This technique is often used when a problem can be broken down into smaller, similar sub-problems.
+~
+- 25
+What will be the output of following C program?
+[A] Hello World!
+[B] Hello
+[C] World!
+[D] (nil)
+A
+char* str = "Hello World!";
+char* s = strstr(str, "Hello");
+printf("%s\n", s);
+~
+In C programming, a recursive function is a function that calls itself, either directly or indirectly, to solve a problem. This technique is often used when a problem can be broken down into smaller, similar sub-problems.
+
+strstr returns a pointer to the first character of the first occurrence of needle (string being searched) in haystack (actual string). In this example, "Hello" is found in the heystack and returned pointer will be pointing to start of the heystack. Therefore it will print the full string as output. 
+~

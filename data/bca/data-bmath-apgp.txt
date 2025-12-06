@@ -1,0 +1,149 @@
+#
+# Business mathematics
+# Sample Questions, Answers, and notes
+#
+- 1
+If the 4th term of an AP is 8 with a common difference of 2. 
+Find out the 8th term value.
+[A] 8
+[B] 12
+[C] 14
+[D] 16
+D
+~
+An arithmetic progression (AP) is a sequence of numbers where the difference between any two consecutive terms is constant. This constant value is known as the common difference "d". The first term is usually represented by "a". 
+
+The general form of an AP is:  a, a+d, a+2d, a+3d, ....
+
+Formula to find (n)th term: (a)n = (a)1 + (n-1)d
+where n   is the number of terms;
+     (a)n is the n(th) term; 
+     a(1) is the first term; 
+     d is the common different
+
+Solution:
+ Given:	 n (number of terms) = 8, d (common difference) =2, 4th term = 8
+   4th term can be written using the formula : (a)n = (a)1 + (n-1)d = 8
+   	=> (a)1 + (4-1) x 2 = 8
+   	=> (a)1 + 6 = 8
+   	=> (a)1 = 8 - 6 = 2	so first term is 2
+   	
+   Now the AP upto 8 terms can be written using the formula: a, a+d, a+3d, ...
+   	=> 2, 2+(1x2), 2+(2x2), 2(3x2), 2(4x2), 2(5x2), 2(6x2), 2(7x2)
+   	=> 2, 4, 6, 8, 10, 12, 14, 16
+   	
+   The 8th term can also be calculated using the formula: (a)n = (a)1 + (n-1)d = 8
+   	=> (a)8 = (a)1 + (8-1)xd = 2 + 7x2 = 16 
+~
+- 2
+Find the 40th term in the 2, 5, 8, 11, 14,... sequence
+[A] 118
+[B] 119
+[C] 120
+[D] 121
+B
+~
+Given:	2, 5, 8, 11, 14, ....
+	difference between 2 and 5 = 3
+	difference between 5 and 8 = 3
+	difference between 8 and 11 = 3
+	difference between 11 and 14 = 3
+	so common difference = d = 3
+
+Formula to find (n)th term: (a)n = (a)1 + (n-1)d
+
+Given n = 40, first term = 2, d = 3
+
+so  40th term =  (first term) + (n-1) x d
+	      = 2 + (40-1) x 3
+	      = 2 + 39 x 3 = 2+117 = 119
+~
+- 3
+Solve the given quadratic equation.
+	4x^2 - 10x + 4 = 0
+[A] 1
+[B] 1.4
+[C] 1.6
+[D] 2
+C
+~
+Quadratic equation: e.g. ax^2 + bx + c = 0
+Quadratic equation formula x= (-b +/- sqrt(b^2-4ac)) / (2a)   
+
+Given:
+	a = 4, b = -10, c = 4
+	
+Applying quadratic equation formaula:
+		x = (-(-10) +/- sqrt((-10)^2 - 4 x 4 x 4)) / (2 x 4)
+		  = (10 +/- sqrt(100 - 64)) / 8
+		  = (10 +/- sqrt(36)) / 8
+		  = (10 +/- 6)/10
+		  => x = 16/10 or x = 4/10
+	          => r = 1.6 or x = 0.4	
+~
+- 4
+Three numbers are in G.P. Their product is 64 and sum is 124/5 find them. 
+[A] 5/4, 5, 20
+[B] 4/5, 4, 20
+[C] 4, 5, 20
+[D] 20, 5, 4
+B
+~
+Terms in GP (General Progression) have common ratio between any two numbers in sequence.
+e.g.   ....,ax^(n-3),ax^(n-2),ax^(n-1), ax^(n),ax^(n+1),ax^(n+2),.... where x is the common ratio
+
+Let the three numbers be:  
+	ar^(-1), ar^(0), ar^(1)	where r is the common ratio
+Given:
+	ar^(-1) x ar^(0) x ar^(1) = 64
+		=> a/r x a x ar = 64 => a^3 = (4)^3 => a = 4
+Given:
+	ar^(-1) + ar^(0) + ar^(1) = 124/5
+		=> a/r + a + ar = 124/5
+		=> 4/r + 4 + 4r = 124/5
+		=> (5r) x (4/r + 4 + 4r) = (5r) x 124/5
+		=> 20 + 20r + 20r^2 = 124r
+		=> 20r^2 - 104r + 20 = 0
+		=> 5r^2 -26r +5 = 0
+
+=============================================================
+Quadratic equation: e.g. ax^2 + bx + c = 0
+Quadratic equation formula x= (-b +/- sqrt(b^2-4ac)) / (2a)   
+=============================================================
+
+Applying quadratic equation formaula:
+		r = (26 +/- sqrt((-26)^2 - 4 x 5 x 5)) / (2 x 5)
+		  = (26 +/- sqrt(676 - 100)) / 10
+		  = (26 +/- sqrt(576)) / 10
+		  = (26 +/- 24)/10
+		  => r = 50/10 or r = 2/10
+	          => r = 5 or r = 0.5
+So the three numbers are either
+	4(5^-1), 4, 4(5) => 4/5, 4, 20
+	OR
+	4((1/5)^-1), 4, 4(1/5) => 20, 4, 4/5
+~
+- 5
+Solve the given quadratic equation.
+	4x^2 + 12x + 5 = 0
+
+[A] 21/8
+[B] -13/8
+[C] -21
+[D] -13
+B
+~
+Quadratic equation: e.g. ax^2 + bx + c = 0
+Quadratic equation formula x= (-b +/- sqrt(b^2-4ac)) / (2a)   
+
+Given:
+	a = 4, b = 12, c = 5
+	
+Applying quadratic equation formaula:
+		x = (-12 +/- sqrt(12^2 - 4 x 4 x 5)) / (2 x 4)
+		  = (-12 +/- sqrt(144 -80)) / 8
+		  = (-12 +/- sqrt(64)) / 8
+		  = (-21 +/- 8)/8
+		  => x = (-21 + 8)/8   or x = (-21 - 8) /8
+	          => x = -13/8         or x = -29/8	
+~

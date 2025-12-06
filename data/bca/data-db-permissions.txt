@@ -1,0 +1,224 @@
+#
+# DBMS
+# Sample Questions, Answers, and notes related to database users and permissions
+#
+- 1
+What will be the correct SQL to create a database only if a database wit that name does not already exists. 
+[A] CREATE DATABASE my_new_database;
+[B] CREATE DATABASE WHEN NOT EXISTS my_new_database;
+[C] CREATE DATABASE IF NOT EXISTS my_new_database;
+[D] CREATE DATABASE IF NOT EXISTS my_new_database ;
+C
+~
+To prevent an error if a database with the same name already exists, you can use the IF NOT EXISTS clause (supported in some SQL dialects like MySQL):
+CREATE DATABASE WHEN NOT EXISTS my_new_database;
+This statement will create my_new_database only if a database with that name does not already exist.
+~
+-2 
+Which of these is not a valid privilege (permission) type
+SELECT
+INSERT
+UPDATE 
+DELETE
+EXECUTE
+[A] EXECUTE
+[B] DELETE
+[C] INSERT
+[D] None
+D
+~
+All of these are valid privileges. 
+A privilege_type: specifies the type of permission being granted. Common privileges include:
+SELECT: Allows reading data from an object.
+INSERT: Allows adding new data to an object.
+UPDATE: Allows modifying existing data in an object.
+DELETE: Allows removing data from an object.
+EXECUTE: Allows executing functions or procedures.
+ALL PRIVILEGES: Grants all available privileges on the specified object.
+~
+- 3
+Which of these are SQL commands to manage user permissions on database objects?
+
+I - GRANT
+II - REVOKE
+II - DELETE
+IV - CREATE
+
+[A] All
+[B] I, II & IV
+[C] II & IV
+[D] I & II
+D
+~
+GRANT and REVOKE are SQL (Data Control Language) commands used to manage user permissions on database objects. The GRANT command is used to give a user specific privileges, such as the ability to SELECT, INSERT, UPDATE, or DELETE data from a table, while the REVOKE command is used to take away these granted privileges. 
+~
+- 4
+Select what actions user 'adam' can perform when given below grants?
+    
+    GRANT SELECT, INSERT ON Employees TO 'adam'@'localhost';
+
+[A] Can only select data from  Employees table
+[B] Can only Insert new records into Employees table
+[C] Can perform CRUD (Create, Read, Update and Delete) operations on Employees table
+[D] Can only select and insert on Employees table
+D
+~
+The user 'adam' on 'localhost' can perform the SELECT and INSERT actions on the Employees table.
+~
+- 5
+What is the use of WITH GRANT OPTION in GRANT command?
+[A] gives the user receiving the privilege the ability to only use the privilege
+[B] gives the user receiving the privilege the ability to only grant that same privilege to other users
+[C] gives the user receiving the privilege the ability to use and also grant that same privilege to other users
+[D] this option is not part of GRANT command
+C
+~
+WITH GRANT OPTION is a clause in SQL's GRANT statement that gives the user receiving the privilege the ability to grant that same privilege to other users. Without this clause, a user can only use the privilege themselves but cannot extend it to others. It essentially allows a user to act as a delegator for a specific permission. 
+~
+- 6
+Select correct explanation of the below command:
+
+GRANT SELECT ON Products TO SalesTeam;
+
+[A] This command grants the SELECT permission on the Products table to the SalesTeam role.
+[B] This command grants the SalesTeam permission on Products table to all users.
+[C] This command grants the SELECT permission on the SalesTeam table to the Products role.
+A
+~
+The GRANT command in SQL is a Data Control Language (DCL) command used to provide users or roles with specific privileges (permissions) to interact with database objects. These privileges define what actions a user or role can perform on tables, views, sequences, functions, procedures, and other database entities.
+Basic Syntax:
+
+GRANT permission
+ON object_name
+TO user_or_role
+[WITH GRANT OPTION];
+~
+- 7
+What does WITH GRANT OPTION mean in a GRANT command?
+[A] It is mandatory when using GRANT command 
+[B] It limits the access of user being granted permission to itself
+[C] It allows user being granted permission to revoke permissions of other users
+[D] It allows user being granted permission to grant permissions other users
+D
+~
+WITH GRANT OPTION in SQL is a powerful clause used with the GRANT command, allowing a user who receives a permission (like SELECT or UPDATE) to also pass that same permission on to other users or roles, creating a chain of authority. Without it, the user only gets the privilege; with it, they become a manager of that privilege, able to delegate it, which is a significant security consideration in databases like SQL Server, Oracle, and PostgreSQL. 
+~
+- 8
+Which of these is not a CONSTRAINT?
+[A] PRIMARY KEY
+[B] NOT NULL
+[C] CHECK (Age > 18)
+[D] WHEN Age > 18
+D
+~
+WHEN is not a constraint.
+
+CASE WHEN is a conditional expression used within SQL queries to perform conditional logic, similar to an "if-then-else" statement in programming. 
+~
+- 9
+What is following command trying to achieve?
+
+  ALTER TABLE [child_table_name]
+  DROP CONSTRAINT [foreign_key_constraint_name];
+  
+[A] The command alters the table so that constraint foreign_key_constraint_name key cannot be deleted
+[B] The command alters the table to delete a constraint by the name foreign_key_constraint_name.
+[C] The command alters the table and adds a constraint by the name foreign_key_constraint_name.
+B
+~
+To drop a constraint in SQL, the ALTER TABLE statement is used with the DROP CONSTRAINT clause. The specific syntax can vary slightly depending on the type of constraint and the database system being used (e.g., SQL Server, Oracle, MySQL).
+~
+- 10
+Which is these is NOT used to manage permissions and access to data?
+[A] Indexing
+[B] Views to filter data
+[C] Stored Procedures
+[D] User roles
+A
+~
+Permissions, or privileges, are used to restrict unauthorized access to data and operations, ensuring data security and integrity. They allow a database administrator (DBA) to control which users can view, modify, or manage specific database objects.
+
+Views provide a customized or restricted perspective of the data in underlying tables. Permissions can be granted on the view itself, allowing users to access a subset of data or aggregated information without having direct access to the entire base table.
+
+Stored procedures are pre-compiled SQL statements that can be used as an access-control mechanism. A user might be granted permission to execute a stored procedure, which in turn performs operations on underlying tables they don't have direct access to, thus enforcing specific logic and enhancing security. 
+~
+- 11
+Choose the correct statement related to TRUNCATE command.
+
+[A] Same as DELETE command
+[B] Removes specific rows from a table based on a WHERE clause. 
+[C] Removes all rows from a table by deallocating the data pages storing the table data.
+[D] TRUNCATE can be slower than DELETE command
+C
+~
+The DELETE and TRUNCATE commands in a Database Management System (DBMS) both remove data from a table, but they differ significantly in their operation, transactional behavior, and impact on table properties.
+
+TRUNCATE removes all rows from a table by deallocating the data pages storing the table data. 
+It does not support a WHERE clause.
+~
+- 12
+Which of these is NOT a DML (Data Manipulation Language) commands?
+[A] SELECT
+[B] CREATE
+[C] DROP
+[D] TRUNCATE
+A
+~
+DML commands are used to manipulate the data stored within the database objects. They focus on interacting with the actual data, including inserting, retrieving, updating, and deleting records. DML commands are typically executed more frequently by application developers or end-users. 
+
+DML Command Examples:
+  SELECT: To retrieve data from one or more tables.
+  INSERT INTO: To add new rows (records) into a table.
+  UPDATE: To modify existing data within a table.
+  DELETE FROM: To remove specific rows (records) from a table.
+~
+- 13
+Which of these is NOT a DDL (Data Definition Language) commands?
+[A] ALTER
+[B] RENAME
+[C] DROP
+[D] INSERT
+D
+~
+DDL commands are used to define, modify, and manage the structure of database objects like tables, indexes, views, and schemas. They focus on the database's blueprint and how data is organized, rather than the data itself. DDL commands are typically executed less frequently by database administrators.
+
+DDL Command Examples:
+  CREATE TABLE: To create a new table.
+  ALTER TABLE: To modify the structure of an existing table (e.g., add a column, change data type).
+  DROP TABLE: To delete an entire table.
+  TRUNCATE TABLE: To remove all rows from a table, but keep the table structure.
+  RENAME TABLE: To change the name of a table.
+~
+- 14
+Which of these is TCL (Transactional Control Language) command?
+[A] ALTER
+[B] INSERT
+[C] ROLLBACK
+[D] DELETE
+C
+~
+COMMIT is neither DDL (Data Definition Language) nor DML (Data Manipulation Language). Instead, it belongs to the category of TCL (Transaction Control Language) commands.
+
+TCL Comamnd Examples:
+  COMMIT - used to permanently save the changes made during the current transaction to the database.
+  ROLLBACK - used to undo all changes made during the current transaction, reverting the database to its state before the transaction began (or since the last COMMIT)
+  SAVEPOINT
+~
+- 15
+Choose the incorrect langauge type?
+[A] Data Definition Language (DDL)
+[B] Data Manipulation Language (DML)
+[C] Transactional Data Language (TCL)
+[D] Archival Data Language (AVL)
+D
+~
+SQL commands are fundamental building blocks used to perform given operations on database. The operations include queries of data. creating a table, adding data to tables, dropping the table, modifying the table and set permission for users.
+
+SQL Commands are mainly categorized into five categories:
+
+ DDL - Data Definition Language  (e.g. ALTER, CREATE, DROP)
+ DQL - Data Query Language (e.g. SELECT)
+ DML - Data Manipulation Language (e.g. INSERT, UPDATE, DELETE)
+ DCL - Data Control Language  (e.g. GRANT, REVOKE)
+ TCL - Transaction Control Language  (e.g. COMMIT, ROLLBACK, SAVEPOINT)
+~

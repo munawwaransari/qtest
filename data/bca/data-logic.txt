@@ -1,0 +1,244 @@
+#
+# Logical Reasoning
+# Sample Questions, Answers, and notes
+#
+- 1
+What number should come next in series: 53, 40, 27, 14, ... ? 
+[A] 19
+[B] 14
+[C] 21
+[D] 1
+D
+~
+To solve series questions, first find the pattern by checking the differences, ratios, or other relationships between consecutive numbers, such as addition, subtraction, multiplication, or division. In this example, the difference is always 13.
+~
+- 2
+"secretly" is to "openly" as "silently" is to 
+[A] Scarcely
+[B] Noisily
+[C] Politely
+[D] Quitely 
+B
+~
+To solve "A is to B as C is to D" (A:B :: C:D) analogy questions, the primary strategy is to identify the exact relationship between A and B and then apply that same relationship to C to find D. In this example, secretly is opposite of openly; so the answer should be opposite of silently.
+~
+- 3
+Statements: 
+ No women teacher can play. 
+ Some women teachers are athletes.
+ Conclusions: 
+ I. Male athletes can play. 
+ II. Some athletes can play.
+ 
+[A] Only conclusion I follows 
+[B] Only conclusion II follows
+[C] Either I or II follows 
+[D] Neither I nor II follows
+D
+~
+No women teacher can play: This is a universal negative statement about women teachers and their ability to play.
+Some women teachers are athletes: This is a particular affirmative statement, meaning there is an overlap between the group "women teachers" and the group "athletes."
+
+What we know: 
+The "some women teachers" who are athletes are part of the group that "cannot play". Therefore, some athletes (specifically, those who are women teachers) cannot play.
+
+What we don't know: 
+The statements provide no information about any other group of athletes, such as male athletes or athletes who are not women teachers. It is possible that other athletes can play, or that none can, and we cannot conclude anything about them. 
+~
+- 4
+Introducing a boy, a girl said, "He is the son of the daughter of the father of my uncle." How is the boy related to the girl? 
+[A] Brother
+[B] Nephew
+[C] Uncle
+[D] Son-n-Law
+B
+~
+To solve this, break down the sentence from the end. My uncle's father' dautghter's son.
+uncle's father -> has -> son (girl's uncle) and daughter (girl's aunt)
+boy is son of girl;s aunt -> so he must be nephew to the girl
+~
+- 5
+Look at this series: F2, ___ , D8, C16, B32, . . .
+What number should fill the blank?
+[A] G4
+[B] E4
+[C] E3
+[D] A16
+B
+~
+Notice how alphabets are going in decreasing order while numbers are increasing such that base is 2 
+	F, E, D, C, B, ....
+	2^1=2, 2^2=4, 2^3=8, 2^4=16, 2^5=32, ...
+~
+- 6
+Which word does NOT belong with the others?
+[A] tulip
+[B] rose
+[C] bud
+[D] daisy
+C
+~
+The list has names of flowers except bud which is not a flower (it will develop into a flower later). So bud does not belong to the group.
+~
+- 7 
+Find the word that names a necessary part of the word "book".
+[A] pages
+[B] novel
+[C] fiction
+[D] learning
+A
+~
+pages are necessary for all books (assuming book here refers to generic definition of a book that has a cover and pages).  
+~
+- 8
+Cup is to coffee as bowl is to
+[A] dish
+[B] food
+[C] spoon
+[D] soup
+D
+~
+To solve "A is to B as C is to D" (A:B :: C:D) analogy questions, the primary strategy is to identify the exact relationship between A and B and then apply that same relationship to C to find D. In this example, secretly is opposite of openly; so the answer should be opposite of silently.
+~
+- 9
+Here are some words translated from an artificial language.
+morpirquat means birdhouse
+beelmorpir means bluebird
+beelclak means bluebell
+
+Which word could mean “houseguest”?
+
+[A] morpirhunde
+[B] beelmoki
+[C] quathunde
+[D] clakquat
+C
+~
+Analyzing the given words, ti can be clear that the words are composite in nature and "morpi" is meant for "bird" while "quat" is meant for "house". There are tow answers that have "quat" in it; however since "clak" is meant for bell, the correct answer can only be "quathunde".   
+~
+- 10
+I   - Blueberries cost more than strawberries.
+II  - Blueberries cost lest than raspberries.
+III - Raspberries cost more than both strawberries and blueberries.
+
+If the first two statements are true, the third statement is
+[A] True
+[B] False
+[C] Uncertain
+A
+~
+Cost of raspberries > Cost of blueberries > Cost of strawberries.
+~
+- 11
+A, P, R, X, S and Z are sitting in a row. 
+
+S and Z are in the centre. 
+A and P are at the ends. 
+R is sitting to the left of A. 
+
+Who is to the right of P ?
+
+[A] A
+[B] X
+[C] S
+[D] Z
+B
+~
+Given S & Z are in the center. This can have following two possibilities:
+	.... S Z ...   or ...Z S....
+Given A and P are at the ends
+	A...S Z...P   or P...Z S....A
+Given R is to the left of A. This is only possible if A is on the rightmost side	
+	P...Z S R A
+Now we are left with X, who must be sitting to the right of P	
+	P (X) Z S R A  
+~
+- 12
+A, B, C, D and E are sitting on a bench. 
+
+A is sitting next to B, 
+C is sitting next to D, 
+D is not sitting with E who is on the left end of the bench. 
+C is on the second position from the right. 
+A is to the right of B and E. 
+A and C are sitting together. 
+
+In which position A is sitting ?
+
+[A] Between B and D
+[B] Between B and C
+[C] Between E and D
+[D] Between C and E
+B
+~
+Given (first two statements):  
+	... B/A A/B ...D/C C/D....
+Given D is not next to E & E is on the left most end.
+	E...B/A A/B ...D/C C/D...
+Give C is on the second position from right:
+	E...B/A A/B ...C D...		(since C & D are sitting next)
+Given A is on the right of B & E
+	E...B A...C D....
+Given A & C are next to each other. So final arrangement is
+	E (B) A (C) D	
+so A is sitting between B and C
+~
+- 13
+A man starts from a point and walks 2km towards North, 
+turns towards his right and walks 1km, 
+turns right again and walks. 
+
+What is the direction now he is facing?
+
+[A] South
+[B] South-East
+[C] North
+[D] West
+A
+~
+Starting point => North  --> turn right => East --> turn right => South
+~
+- 14
+Five boys A, B, C, D, E are siting in a park in a circle.
+A is facing South-West;
+D is facing South-East;
+B and E are opposite A and D respectively;
+C is equidistant between D and B.
+
+Which direction is C facing?
+
+[A] East
+[B] West
+[C] North
+[D] South
+A
+~
+Given A is facing South-West and D is facing South-East
+  	       (center)	
+ (south-west)A          D (south-east)
+ 
+Given B & E are opposite A & D;        
+   (n-w) E     B (n-e)
+            .
+   (s-w) A     D (s-e)
+
+Given C is between D and B	  
+   	 E    B
+           .    C (east)
+   (s-w) A    D (s-e)
+~
+- 15
+Statement I: People who read fashion magazines do not like to read fiction. 
+Statement II: Tenzin does not read fashion magazines. 
+
+Assuming that Statements I and II are true, which of the following conclusions might be said to follow?
+
+[A] Tenzin likes to read fiction.
+[B] Tenzin may or may not like to read fiction.
+[C] Tenzin does not like to read fiction.
+[D] Tenzin does not like fashion magazines.
+B
+~
+Tenzin does not fall under people who read fashion magazines.
+So nothing ca be said with confidence about Tenzin whether Tenzin likes or does not like reading fiction.
+~

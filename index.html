@@ -1,0 +1,62 @@
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="author" content="Munawwar Ansari (munawwar_ali@yahoo)" />
+	<meta name="keywords" content="BCA, Business Maths, C Programming, DBMS, ER Diagram, Logical Reasoning"/>
+	<meta name="description" content="B">
+    <meta name="robots" content="all">
+    <title>Online Tests & Learning Resources</title>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
+		<script src="scripts/jquery/jquery-3.7.1.min.js"></script>
+		<script>
+			window.openInline = function(url, playOptions){
+				console.log("openInline");
+				$('.reading-pane').attr("src","");
+				setTimeout(function(){
+					$('.reading-pane').attr('src', url);				
+				}, 5);
+			}
+						
+			window.redirect = function(url, action, data){
+				$('.reading-pane').attr("src","");
+				setTimeout(function(){
+					$('.reading-pane').attr('src', encodeURI(getLocationPath()+url+"?action="+action+"&data="+data));
+				}, 5);
+			}			
+		</script>
+		</script>
+		<!-- <script src="scripts/chapters.js"></script> -->
+	</head>
+	<body>
+		<img id="hd-loading"
+			 style="position:absolute;margin:auto;width:50px;display:block;
+					z-index:4;background-color:transparent;cursor:pointer;" 
+			 src="images/loading.gif"
+			 title="Click to reload!"
+			 onclick="console.log('Reloading');location.reload();">
+		</img>
+		<section id="main" class="main"></section>
+		<div id="support" style="display:none"></div>
+		<script src="scripts/data-util.js"></script>
+		<script src="scripts/onload.js"></script>
+		<div class="containerHead" onclick="toggleHead()">
+			<img id="imgHead" src="images/up.png">
+		</div>
+		<div class="toolDiv" style="display:none">
+			<span class="toolSpan"><b style="font-size:12px;">
+			  <a target="_blank" href="LICENSE.md">Online Test and Learning Resources</a></b></span>
+			<span class="toolSpan">
+				<img id="theme" style="display:none" class="tool" src="images/theme.png" />
+				<img id="km" class="tool" src="images/km.jpg" onclick="loadTestBankResources()" />
+			</span>
+			<span class="toolSpan" style="font-size:16px;">
+				<span id="tool-description"/>
+			</span>
+		</div>
+		<iframe class="reading-pane" />
+		</div>
+	</body>
+</html>

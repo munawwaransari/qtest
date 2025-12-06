@@ -1,0 +1,505 @@
+#
+# DBMS
+# Sample Questions, Answers, and notes CRUD operations
+#
+- 1
+What does the SQL acronym CRUD stand for?
+
+[A] Create, Read, Update, Destroy
+[B] Create, Read, Update, Delete
+[C] Copy, Read, Update, Delete
+[D] Construct, Retrieve, Update, Delete
+B
+~
+CRUD is an acronym representing the four fundamental operations performed on data in a database: Create, Read, Update, and Delete. These operations are essential for managing data throughout its lifecycle within a database system.
+~
+- 2
+Which normal form is the desired level of normalization that offers an optimal balance between reducing data redundancy and maintaining database performance. 
+
+[A] Second Normal Form (2NF)
+[B] Third Normal Form (3NF)
+[C] Fourth Normal Form (4NF)
+[D] Fifth Normal Form (5NF)
+B
+~
+Normalization involves a series of rules (normal forms) designed to organize data, reduce redundancy, and prevent data anomalies (insertion, update, and deletion anomalies). Each normal form builds upon the previous one. 
+
+For most practical business applications, Third Normal Form (3NF) is the desired level of normalization. It offers an optimal balance between reducing data redundancy and maintaining database performance. 
+~
+- 3
+What is "Denormalization"?
+
+[A] A stricter version of 3NF
+[B] Deleting primary keys
+[C] Relaxing some normal form rules
+[D] Relaxing performance requirements of a database
+C
+~
+In certain performance-critical applications, such as data warehousing or reporting systems, the database might be intentionally "denormalized" (relaxing some normal form rules) to reduce the need for expensive joins and improve query speed. 
+~
+- 4
+Consider following schema in 2NF form.
+
+ +-----+----------+-------------+----------+
+ | id  | course   | instructor  | office   |
+ +-----+----------+-------------+----------+
+ | 001 | Science  | Prof. Adam  | Tower-1  |
+ | 002 | Maths    | Prof. Smith | Tower-2  |
+ | 001 | Science  | Prof. Adam  | Tower-1  |
+ | 003 | English  | Prof. Adam  | Tower-1  |
+ +----------------+-------------+----------+    
+
+Select the false statement.
+
+[A] partial dependencies are addressed as there is a composite key (course, instructor) 
+[B] office depends on instructor (a non-key attribute),
+[C] instructor depends on course (the primary key). 
+[D] there is no transitive dependency and the table is already in 3NF 
+D
+~
+To convert a table from 2NF to 3NF, identify any transitive dependencies where a non-key attribute depends on another non-key attribute, and then separate the transitively dependent attributes into a new table. For example, a table with CourseID, InstructorName, and InstructorOffice can be converted to 3NF by creating two tables: a Courses table (CourseID, InstructorName) and an Instructors table (InstructorName, InstructorOffice) to remove the transitive dependency of InstructorOffice on CourseID via InstructorName. 
+~
+- 5
+What will be the output of below SQL statement?
+ 
+ SELECT DISTINCT COUNT(*) FROM Students;
+
+Table: Students
+ +------+------+
+ | name | age  |
+ +------+------+
+ | Adam | 32   |
+ | Ajay | 41   |
+ | Zaid | NULL |
+ | Kevin| 38   |
+ +------+------+
+
+[A] 0
+[B] 4
+[C] 3
+[D] Error
+C
+~
+The DISTINCT keyword can be used with a column_name (e.g., COUNT(DISTINCT column_name)) to count only the unique non-null values in that column
+~
+- 6
+What will be the output of below SQL statement?
+
+SELECT NAME FROM Students 
+GROUP BY NAME
+HAVING COUNT(Subject) > 1;
+
+Table: Students
+ +------+-------------+
+ | name | subject     |
+ -------+-------------+
+ | Adam | Mathematics |
+ | Ajay | Physics     |
+ | Zaid | Chemistry   |
+ | Zaid | Biology     |
+ +--------------------+
+[A] Adam
+[B] Ajay
+[C] Zaid
+[D] empty result
+D
+~
+Aggregate functions in SQL, such as COUNT(), SUM(), AVG(), MIN(), and MAX(), perform calculations on a set of values and return a single summary value. When used with the GROUP BY clause, these functions become even more powerful, allowing for calculations to be performed on groups of rows rather than the entire dataset.
+~
+- 7
+What will be the output of below SQL statement?
+
+SELECT COUNT(name)
+FROM Employees
+WHERE depId IN (
+    SELECT id
+    FROM Departments
+    WHERE location in ('Paris')
+);
+
+Table: Employees            Table: Departments
+ +-------+--------+         +-------+------------+
+ | name  | depId  |         | id    | location   |
+ +-------+--------+         +-------+------------+
+ | Adam  | 1001   |         | 1001  | New York   |
+ | Chris | 1001   |         | 1002  | Washington |
+ | John  | 1002   |         | 1003  | London     |
+ | Hary  | 1003   |         | 1004  | Paris      |
+ +----------------+         +--------------------+
+[A] 0
+[B] 2
+[C] 3
+[D] 4
+A
+~
+A nested SQL query, also known as a subquery or inner query, is a query embedded within another SQL query. The inner query executes first and its result is then used by the outer query.
+~
+- 8
+Consider following schema.
+
+ Table: Teachers      Relation: Teacher_Subject      Table: Subjects
+ +----+----------+    +-------------------------+    +------------------+
+ | id | name     |----| teacher_id | subject_id |    | id  |  name      |
+ +----+----------+    +-------------------------+    +------------------+
+ | 10 | Adam S   |    | 10         | 101        |    | 101 | C Prog.    |
+ | 22 | John K   |    | 22         | 201        |    | 102 | Python     |
+ | 30 | Berry G  |    | 30         | 301        |    | 201 | B. Math    |
+ | 44 | Kevin N  |    | 44         | 201        |    | 301 | DBMS       |
+ | 55 | John K   |    | 30         | 102        |    +-----+------------+
+ +---------------+    +------------+------------+    
+
+Complete the <SubQuery> to list names of those teachers who do not teach any subject.
+
+SELECT t.Name FROM Teachers as t WHERE t.id NOT IN (<SubQuery>);
+
+[A] SELECT * FROM Teacher_Subject
+[B] SELECT id FROM Subjects
+[C] SELECT id FROM Teacher_Subject
+[D] SELECT * FROM  Subjects
+C
+~
+A subquery with NOT IN is used to retrieve rows from an outer query where a specific column's value does not exist in the result set of an inner subquery.
+~
+- 9
+Consider following schema.
+
+ Table: Teachers      Relation: Teacher_Subject      Table: Subjects
+ +----+----------+    +-------------------------+    +------------------+
+ | id | name     |----| teacher_id | subject_id |    | id  |  name      |
+ +----+----------+    +-------------------------+    +------------------+
+ | 10 | Adam S   |    | 10         | 101        |    | 101 | C Prog.    |
+ | 22 | John K   |    | 22         | 201        |    | 102 | Python     |
+ | 30 | Berry G  |    | 30         | 301        |    | 201 | B. Math    |
+ | 44 | Kevin N  |    | 44         | 201        |    | 301 | DBMS       |
+ | 55 | John K   |    | 30         | 102        |    +-----+------------+
+ +---------------+    +------------+------------+    
+ 
+Complete the <Columns> to list names and subject of teachers.
+Select the most appropriate answer.
+ 
+SELECT <Columns> 
+FROM Teachers as t 
+JOIN Teacher_Subject ON t.id==ts.teacher_id
+JOIN Subjects s ON s.id==ts.subject_id;
+ 
+[A] Teachers.name, Subjects.name
+[B] t.name Teacher Name, s.name Subject Name
+[C] t.name [Teacher Name], s.name [Subject Name]
+[D] t.* as [Teacher Name], s.* as [Subject Name]
+C
+~
+SQL aliases provide temporary, alternative names for tables or columns within a query. These aliases do not alter the underlying database schema but serve to enhance readability, simplify complex queries, and resolve naming conflicts.
+
+The AS keyword is optional but generally recommended for improved readability. If the alias contains spaces or special characters, it must be enclosed in quotes (single or double, depending on the specific SQL dialect).
+~
+- 10
+Consider following schema.
+
+ Table: Teachers      Relation: Teacher_Subject      Table: Subjects
+ +----+----------+    +-------------------------+    +------------------+
+ | id | name     |----| teacher_id | subject_id |    | id  |  name      |
+ +----+----------+    +-------------------------+    +------------------+
+ | 10 | Adam S   |    | 10         | 101        |    | 101 | C Prog.    |
+ | 22 | John K   |    | 22         | 201        |    | 102 | Python     |
+ | 30 | Berry G  |    | 30         | 301        |    | 201 | B. Math    |
+ | 44 | Kevin N  |    | 44         | 201        |    | 301 | DBMS       |
+ | 55 | John K   |    | 30         | 102        |    +-----+------------+
+ +---------------+    +------------+------------+    
+ 
+Complete the <Condition> to list names of teachers who teach more than one subject.
+ 
+SELECT t.name FROM Teachers as t WHERE id IN (
+   SELECT COUNT(*) 
+   FROM Teacher_Subject
+   GROUP BY subject_id
+   ORDER BY subject_id
+   HAVING <Condition>
+);
+ 
+[A] ts.subject_id > 1 
+[B] COUNT(*) > 1 
+[C] COUNT(teacher_id) > 1 
+[D] COUNT(subject_id) > 1 
+D
+~
+The SQL GROUP BY clause arranges identical data into groups based on one or more columns, typically used with aggregate functions like COUNT(), SUM(), AVG(), MAX(), and MIN() to perform calculations on each group. The HAVING clause then filters these groups based on the results of aggregate functions.
+
+If a particular order is desired for the grouped results, an explicit ORDER BY clause must be added after the GROUP BY clause. This ensures the data is sorted according to the specified columns or aggregate functions.
+~
+- 11
+Consider following schema.
+
+ Table: Teachers      Relation: Teacher_Subject      Table: Subjects
+ +----+----------+    +-------------------------+    +------------------+
+ | id | name     |----| teacher_id | subject_id |    | id  |  name      |
+ +----+----------+    +-------------------------+    +------------------+
+ | 10 | Adam S   |    | 10         | 101        |    | 101 | C Prog.    |
+ | 22 | John K   |    | 22         | 201        |    | 102 | Python     |
+ | 30 | Berry G  |    | 30         | 301        |    | 201 | B. Math    |
+ | 44 | Kevin N  |    | 44         | 201        |    | 301 | DBMS       |
+ | 55 | John K   |    | 30         | 102        |    +-----+------------+
+ +---------------+    +------------+------------+    
+
+How many rows will be returned by the given query?
+
+SELECT t.name [Teacher Name] FROM Teachers
+UNION
+SELECT s.name [Subject Name] FROM Subjects
+
+[A] 5
+[B] 4
+[C] 9
+[D] error as the column names are different
+C
+~
+A UNION query in SQL combines the result sets of two or more SELECT statements into a single result set. It is a set operator used to merge data from different sources or tables that share a similar structure.
+
+When performing a UNION query in SQL, the column names of the final result set are determined by the first SELECT statement in the UNION operation. Subsequent SELECT statements in the UNION are ignored in terms of their column names.
+
+In this example, rows from both the tables will be merged into a single result set; so 5 rows from Teachers table and 4 rows from Subjects table will result into 9 rows.
+~
+- 12
+In the SQL statement below, table Employees need to refernce department_id column from Departments table.
+Complete the <refernce> in query.
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE,
+    HireDate DATE DEFAULT GETDATE(),
+    DepartmentID INT,
+    Salary DECIMAL(10, 2) CHECK (Salary > 0),
+    <Reference>
+);
+
+[A] FOREIGN KEY (Departments) REFERENCES Departments(DepartmentID)
+[B] FOREIGN KEY (Departments.department_id) REFERENCES (Departments)
+[C] FOREIGN KEY (DepartmentID) REFERENCES Departments(department_id)
+[D] FOREIGN KEY REFERENCES Departments(department_id)
+C
+~
+A foreign key in a Database Management System (DBMS) is a column or a set of columns in one table that establishes a link to the primary key of another table. This link creates a relationship between the two tables, often referred to as a parent-child relationship.
+
+This foreign key constraint ensures that every DepartmentID value in the Employees table must correspond to an existing department_id in the Departments table. If an attempt is made to insert a record with a DepartmentID that does not exist in the Departments table, the DBMS will reject the operation, thus maintaining referential integrity.
+~
+- 13
+Which statement is true about views?
+
+[A] A view is a physical entity in a database, directly storing data in rows and columns.
+[B] A view is a virtual table or a logical representation of data derived from one or more underlying tables (or other views).
+[C] Data in a view is permanently stored until explicitly deleted or modified.
+[D] Views are not dependent on the underlying tables for their data
+B
+~
+A view is a virtual table or a logical representation of data derived from one or more underlying tables (or other views).
+
+A view does not physically store data; it stores the SQL query definition that retrieves data from its base tables.
+
+Views do not consume physical storage space for data, only for their definition.
+
+Data manipulation on a view is generally not directly supported, as changes must be reflected in the underlying base tables.
+Views are dependent on the underlying tables for their data; if the base tables are modified or deleted, the view may become invalid.
+
+Views are often used for security, simplifying complex queries, or presenting specific subsets of data to users without exposing the entire underlying table structure.
+~
+- 14
+Consider following table:
+
+ Table: Employees
+ +----+----------+-----------+
+ | id | firs_name| last_name |
+ +----+----------+-----------+
+ | 10 | Adam     | Smith     |   
+ | 22 | John     | Kelly     |
+ | 30 | Berry    | Green     |
+ | 44 | Kevin    | Novac     |
+ | 55 | David    | Dan       |
+ +---------------+-----------+    
+
+Complete the below statement to create the view to list employee Id and a single volume for name (including first and last name separated by space):
+
+CREATE VIEW emp_view AS SELECT id, <Columns> FROM Employee;
+
+[A] firs_name, last_name
+[B] CONCAT(first_name, last name) as [NAME]
+[C] CONCAT(first_name, " ", last name) as [NAME]
+[D] CONCAT(first_name, NULL, last name) as [NAME]
+C
+~
+In SQL, both the CONCAT function and the + (plus) operator can be used for string concatenation, but they exhibit key differences in behavior, particularly concerning NULL values and data type handling.
+
++ operator: If any of the expressions involved in a concatenation using the + operator are NULL, the entire result of the concatenation will be NULL. This behavior is influenced by the CONCAT_NULL_YIELDS_NULL setting in SQL Server.
+
+CONCAT function: The CONCAT function implicitly treats NULL values as empty strings ('') during concatenation. This means that if an argument to CONCAT is NULL, it will be effectively ignored, and the other non-NULL values will be concatenated.
+~
+- 15
+The join operation can be defined as:
+[A] a cartesian product of two relations followed by a selection
+[B] a cartesian product of two relations
+[C] a union of two relations followed by cartesian product of the two relations
+A
+~
+In DBMS, the join operation combines rows from two or more tables based on a related column (like a primary/foreign key), allowing you to retrieve meaningful data across tables, essentially being a Cartesian product followed by a selection based on a join condition, with common types including Inner, Left, Right, Full, Cross, and Self joins. 
+~
+- 16
+Which of these is not a join type:
+[A] Left
+[B] Right
+[C] Inner
+[D] Out
+D
+~
+In DBMS, the join operation combines rows from two or more tables based on a related column (like a primary/foreign key), allowing you to retrieve meaningful data across tables, essentially being a Cartesian product followed by a selection based on a join condition, with common types including Inner, Left, Right, Full, Cross, and Self joins. 
+~
+- 17
+How many rows will be returned when table Teacher is LEFT JOINED with table Subject on Teacher.SubID = Subject.ID.
+
+ +-------------------------     +------------------+
+ | Teacher                |     | Subject          |
+ +-------+-------+---------     +------------------+
+ | ID    |  NAME | SubID  |     | ID   |  NAME     |
+ | ------| ------| ------ |     | -----| --------- |
+ | 001   |  A    | 1001   |     | 1001 |  ABC      |
+ | 002   |  B    | 1002   |     | 1002 |  XYZ      |  
+ | 003   |  C    | NULL   |     +------------------+
+ +-------+-------+--------+    
+
+[A] 2
+[B] 3
+[C] 1
+[D] 0
+B
+~
+LEFT join returns all rows from the left table and any matching rows from the right table.
+As the left table has 3 rows, all three rows will be returned (irrespective of matching rows from second table)
+~
+- 18
+How many rows will be returned when table Teacher is RIGHT JOINED with table Subject on Teacher.SubID = Subject.ID.
+
+ +-------------------------     +------------------+
+ | Teacher                |     | Subject          |
+ +-------+-------+---------     +------------------+
+ | ID    |  NAME | SubID  |     | ID   |  NAME     |
+ | ------| ------| ------ |     | -----| --------- |
+ | 001   |  A    | 1001   |     | 1001 |  ABC      |
+ | 002   |  B    | 1002   |     | 1008 |  XYZ      |  
+ | 003   |  C    | NULL   |     +------------------+
+ +-------+-------+--------+    
+
+[A] 2
+[B] 3
+[C] 1
+[D] 0
+A
+~
+RIGHT join returns all rows from the right table and any matching rows from the left table.
+As there right table has 2 rows, only one (1001) matches with the lef. The other row (1008) from the right table will also be returned as right join is used.
+~
+- 19
+How many rows will be returned when table Teacher is CROSS JOINED with table Subject.
+
+ +-------------------------     +------------------+
+ | Teacher                |     | Subject          |
+ +-------+-------+---------     +------------------+
+ | ID    |  NAME | SubID  |     | ID   |  NAME     |
+ | ------| ------| ------ |     | -----| --------- |
+ | 001   |  A    | 1001   |     | 1001 |  ABC      |
+ | 002   |  B    | 1002   |     | 1008 |  XYZ      |  
+ | 003   |  C    | 1008   |     +------------------+
+ +-------+-------+--------+    
+
+[A] 2
+[B] 3
+[C] 5
+[D] 6
+D
+~
+A CROSS JOIN produces the Cartesian product of the tables involved. This means every row from the first table is combined with every row from the second table. 
+
+It does not require a JOIN condition (an ON clause) because it simply creates all possible combinations.
+
+If Table A has N rows and Table B has M rows, a CROSS JOIN will result in N * M rows.
+
+The resultant record-set would be:
+ +------------------------------------------------------------
+ | Teacher CROSS JOINED Subject                              |
+ +-------+-------+--------+----------------------------------+
+ | ID    |  NAME | SubID  | Student.ID   |  Student.NAME     |
+ | ------| ------| ------ | -------------| ----------------- |
+ | 001   |  A    | 1001   | 1001         |  ABC              |
+ | 001   |  A    | 1001   | 1008         |  XYZ              |  
+ | 002   |  B    | 1002   | 1001         |  ABC              |  
+ | 002   |  B    | 1002   | 1008         |  XYZ              |  
+ | 003   |  C    | 1008   | 1001         |  ABC              |  
+ | 003   |  C    | 1008   | 1008         |  XYZ              |  
+ +-------+-------+--------+--------------+-------------------+    
+~
+- 20
+What type of JOIN is used in below query:
+
+SELECT A.column1, B.column2
+FROM table_name AS A
+JOIN table_name AS B ON A.common_column = B.matching_column
+WHERE A.column_name <> B.column_name;
+    
+[A] SELF
+[B] INNER
+[C] OUTER
+[D] CROSS
+A
+~
+A self join is a SQL query where a table is joined with itself, allowing you to compare or relate rows within the same table. It's used to query hierarchical data, like finding an employee's manager, or to compare records that have a relationship within the same table. To perform a self join, you must use table aliases to treat the table as two separate instances in the query. 
+~
+- 21
+Select the best query to list employee name with his/her manager's name.
+
+ +----------------------------- 
+ | EmpTable                   | 
+ +-------+-------+-------------   
+ | ID    |  NAME | ManagerID  |     
+ | ------| ------| ---------  |     
+ | 001   |  A    | NULL       |   
+ | 002   |  B    | 001        |     
+ | 004   |  C    | 002        |
+ | 005   |  D    | 002        |
+ | 006   |  E    | 002        |
+ +-------+-------+------------+    
+
+[A] SELECT e.NAME [Employee], e.ManagerID [Manager]  
+    FROM EmpTable e
+    
+[B] SELECT e1.NAME [Employee], e2.NAME [Manager]  
+    FROM EmpTable e1 LEFT JOIN EmpTable e2 ON e1.ManagerID=e2.ID
+    
+[C] SELECT e1.NAME [Employee], e2.NAME [Manager]  
+    FROM EmpTable e1 RIGHT JOIN EmpTable e2 ON e1.ManagerID=e2.ID
+    
+[D] SELECT e1.NAME [Employee], e2.NAME [Manager]  
+    FROM EmpTable e1 JOIN EmpTable e2 ON e1.ManagerID=e2.ID
+B
+~
+Self-join effectively allows for traversing the hierarchical structure within the Employees table, providing a clear view of who reports to whom.
+~
+- 22
+What does below query is trying to fetch?
+
+SELECT student_name, total_marks
+FROM student_marks
+WHERE total_marks > (
+    SELECT total_marks
+    FROM student_marks
+    WHERE student_id = '0001'
+);
+[A] Retrieve the names and total marks of all students who have a higher total_marks than the student with student_id '0001'
+[B] Retrieve the names and total marks of all students who have a higher total_marks than all students except '0001'
+[C] Retrieve the names and total marks of all students with student_id '0001'
+[D] Retrieve the names and total marks of all students with student_id '0001'
+A
+~
+The provided SQL query is designed to retrieve the names and total marks of all students who have a higher total_marks than the student with student_id 'V002'.
+
+The inner SQL fetches total marks of student with id '0001'
+The outer SQL compares all students' marks with marks obtained from inner query and chooses higher marks.
+So the resultant recordset will have those student records whose total marks are greater than student with is '0001' 
+~

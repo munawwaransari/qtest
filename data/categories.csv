@@ -1,0 +1,12 @@
+Business Maths,General,data/bca/data-bmath-gen.txt
+Business Maths,AP;GP,data/bca/data-bmath-apgp.txt
+Business Maths,Derivatives,data/bca/data-bmath-derint.txt
+Business Maths,Interest,data/bca/data-bmath-interest.txt
+Business Maths,Matrix,data/bca/data-bmath-matrix.txt
+Programming,C 1,data/bca/data-c.txt
+Programming,C 2,data/bca/data-c2.txt
+DBMS,CRUD,data/bca/data-db-CRUD.txt
+DBMS,ER,data/bca/data-db-ER.txt
+DBMS,Permissions,data/bca/data-db-permissions.txt
+Logical Reasoning,Logical Reasoning,data/bca/data-logic.txt
+
