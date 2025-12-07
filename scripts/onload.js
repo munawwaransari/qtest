@@ -187,11 +187,11 @@ function loadResources(){
 	}, 5);
 }
 
-function loadTestBankResources(){
+function loadTestBankResources(c){
 	console.log("loadTestBankResources");
 	$('.reading-pane').attr("src","");
 	setTimeout(function(){
-		$('.reading-pane').attr('src', encodeURI(getLocationPath() + "qtests.html"));
+		$('.reading-pane').attr('src', encodeURI(getLocationPath() + "qtests.html?category="+c));
 	}, 5);
 }
 
@@ -286,11 +286,16 @@ function updateToolDescription(id, opt){
 			toolMessage.html(sdiv);
 			break;
 			
-		case "km":
+		case "km-bca":
 		{
-			toolMessage.html($('<p Style="padding:0;margin:0;"><b>Test</b></p>'));
+			toolMessage.html($('<p Style="padding:0;margin:0;"><b>BCA Questions</b></p>'));
 		}
-		break;		
+		break;
+		case "km-bhms":
+		{
+			toolMessage.html($('<p Style="padding:0;margin:0;"><b>BHMS Questions</b></p>'));
+		}
+		break;
 	}
 }
 
