@@ -152,9 +152,12 @@
 			      qIndex++;
 			      qOptions += qLines[qIndex] + "<br/>";
 			    }
-			    qRadio += '<div><input type="radio" id="'+qLines[index][1]+'" '+
-			                  'name="opt" value="'+qLines[index][1]+'">'+
-                     '<label for="'+qLines[index][1]+'">'+qOptions+'</label></div>';
+			    qRadio += '<div style="align-items: flex-start;">'+
+			                 '<input type="radio" id="'+qLines[index][1]+'" name="opt" value="'+qLines[index][1]+'">'+
+                       '<label for="'+qLines[index][1]+'">'+
+                          '<pre style="display:inline-block">'+qOptions+'</pre>'+
+                       '</label>'+
+                    '</div>';
 			    qIndex++;
 			  }
 			  if(!qLines[qIndex]) qEOF = 1;
@@ -188,7 +191,7 @@
 			    qIndex++;
 			  }
 			  if(!qLines[qIndex]) qEOF = 1;
-			  return qSol;
+			  return "<pre>"+qSol+"</pre>";
 			}
 			
 			function moveToNextQuestion(){

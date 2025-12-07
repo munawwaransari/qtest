@@ -9,10 +9,10 @@
 B
 ~
 To determine if 2/3 is equal to 5/7, you can cross-multiply or convert both fractions to decimals or a common denominator.
-	2     5
+        2     5
        --- ?= ---   =>   2 x 7 ?= 5 x 3   =>    14 ?=  15   => Equation is false 
-	3     7
-	
+        3     7
+        
 Since 14 is not equal to 15, 2/3 is also not equal to 5/7  
 ~
 - 2
@@ -22,7 +22,7 @@ Since 14 is not equal to 15, 2/3 is also not equal to 5/7
 A
 ~
 To determine if 2/3 is equal to 6/9, you can cross-multiply or convert both fractions to decimals or a common denominator.
-	2 x 9 = 18 and 3 x 6 = 18
+        2 x 9 = 18 and 3 x 6 = 18
 Since cross products are equal, 2/3 is equal to 6/9
 ~
 - 3
@@ -57,13 +57,13 @@ If x:21::4:7, find value of x.
 [D] 14
 A
 ~ 
-	    A     C	          x     4                                  
+                   A     C               x     4                                  
 A:B::C:D implies  --- = ---  therefore  --- = ---   
-            B     D               21    7
+                   B     D               21    7
             
-                              21 * 4    
+                                      21 * 4    
 cross multiply => 7*x = 21*4 => x = -------- = 3 * 4 = 12
-                                7  
+                                        7  
 ~
 - 6
 Divide ₹1800 among X, Y in the ratio 2:1
@@ -81,11 +81,11 @@ Value per part = ------------------
                    1800       1800 
                =  ------- =  ------ = 6000
                     2+1        3
- 	                    
+                             
 Now individual share can be calculated by multiplying each share ratio to the value per part.
 
-	share of X = 2 x 6000 = 12000 
-	share of Y = 1 x 6000 = 6000 
+        share of X = 2 x 6000 = 12000 
+        share of Y = 1 x 6000 = 6000 
 ~
 - 7
 Divide ₹7200 among X, Y, and Z in the ratio 3:5:7
@@ -103,12 +103,12 @@ Value per part = ------------------
                       7200            7200 
                =  -------------- =  -------- = 4800
                     3 + 5 + 7          15
- 	                    
+                             
 Now individual share can be calculated by multiplying each share ratio to the value per part.
 
-	share of X = 3 x 4800 = 1440 
-	share of Y = 5 x 4800 = 2400
-	share of Z = 7 x 4800 = 3360 
+        share of X = 3 x 4800 = 1440 
+        share of Y = 5 x 4800 = 2400
+        share of Z = 7 x 4800 = 3360 
 ~
 - 8
 A bag has coins of ₹1, 50 paise, and 25 paise in the ratio of 5:9:4
@@ -125,25 +125,25 @@ Total value of bag = 42 rupees = 4200 paise
 Since there is a mix of rupee and paise, let us convert everything into paise.
 So the ratio in paise would be:
 
-	5x100 : 9x50 : 4x25 => 500 : 450 : 100
-	
+        5x100 : 9x50 : 4x25 => 500 : 450 : 100
+        
 To solve ratio and part/share questions, first find the value per part using formula:
 Note unit must be same, here rupee need to be converted to paise. 
 
- 	                    total value in paise
- 	Value per part =  --------------------------
- 	                   Sum of ratios (in paise)
- 	                      
- 	        	        4200         4200      
- 	               =   ------------- =  ----- = 4 
- 	                    500+450+100      1050 
- 	                    
+                             total value in paise
+         Value per part =  --------------------------
+                            Sum of ratios (in paise)
+                               
+                                 4200         4200      
+                        =   ------------- =  ----- = 4 
+                             500+450+100      1050 
+                             
 Now individual share can be calculated by multiplying each share ratio to the value per part.
 
-	share or count of 50 paise coins = 9 x 4 = 36  (answer)
-	
+        share or count of 50 paise coins = 9 x 4 = 36  (answer)
+        
 Note the count is different from the amount of 50 paise. 
-If amount needed to be calculated, would be = 36*50 = 1800 paise = 18 rupees.	
+If amount needed to be calculated, would be = 36*50 = 1800 paise = 18 rupees.        
 ~
 - 9
 Six years ago, the ratio in the ages of A, B and C was 2:3:5. If the sum of their present ages is 168, Find their ages.
@@ -155,24 +155,24 @@ D
 ~
 Solution:
 Let ages of A, B, and C  6 years ago be: 
-	
-	2x, 3x and 5x respectively (since their ratio is 2:3:5)
+        
+        2x, 3x and 5x respectively (since their ratio is 2:3:5)
 
 So present ages would be:
 
-	2x+6, 3x+6 and 5x+6
+        2x+6, 3x+6 and 5x+6
 
 Given:
-	(2x+6) + (3x+6) + (5x+6) = 168	
-	
-	2x+3x+5x+6+6+6 = 168 
-	
-	10x + 18 = 168  =>  10x = 150  => x = 15
+        (2x+6) + (3x+6) + (5x+6) = 168        
+        
+        2x+3x+5x+6+6+6 = 168 
+        
+        10x + 18 = 168  =>  10x = 150  => x = 15
 
 There ages are:
-	A => 2x = 2*15 = 30
-	B => 3x = 3*15 = 45
-	C => 5x = 5*15 = 75 
+        A => 2x = 2*15 = 30
+        B => 3x = 3*15 = 45
+        C => 5x = 5*15 = 75 
 ~
 - 10
 Calculate the mean of  5,8,10,12,12,15,18,20,20,20,25
@@ -198,21 +198,21 @@ B
 Median is the middle value when numbers are sorted in ascending order
 
 Numbers in ascending order:
-	5,8,10,12,12,(15),18,20,20,20,25
+        5,8,10,12,12,(15),18,20,20,20,25
 ~
 - 12
 Find the mode of the given frequency distribution:
-	 ----------------------------
-	 |  Class      |  Frequency |
-	 --------------+-------------
-	 |  10-20      |    10      |
-	 --------------+-------------
-	 |  20-30      |    10      |
-	 --------------+-------------
-	 |  30-40      |    16      |
-	 --------------+-------------
-	 |  40-50      |    12      |
-	 --------------+-------------
+         ----------------------------
+         |  Class      |  Frequency |
+         --------------+-------------
+         |  10-20      |    10      |
+         --------------+-------------
+         |  20-30      |    10      |
+         --------------+-------------
+         |  30-40      |    16      |
+         --------------+-------------
+         |  40-50      |    12      |
+         --------------+-------------
  
 [A] 36
 [B] 34
@@ -247,17 +247,17 @@ Formula to calculate mode of frequency distribution:
 ~
 - 13
 Find the mean value of the given frequency distribution:
-	 ----------------------------
-	 |  Class      |  Frequency |
-	 --------------+-------------
-	 |  10-20      |    10      |
-	 --------------+-------------
-	 |  20-30      |    10      |
-	 --------------+-------------
-	 |  30-40      |    16      |
-	 --------------+-------------
-	 |  40-50      |    12      |
-	 --------------+-------------
+         ----------------------------
+         |  Class      |  Frequency |
+         --------------+-------------
+         |  10-20      |    10      |
+         --------------+-------------
+         |  20-30      |    10      |
+         --------------+-------------
+         |  30-40      |    16      |
+         --------------+-------------
+         |  40-50      |    12      |
+         --------------+-------------
  
 [A] 31.00
 [B] 31.50
@@ -266,7 +266,7 @@ Find the mean value of the given frequency distribution:
 D
 ~
 Formula to calculate mean of frequency distribution:
-   	    Sumof(frequency * midpoint)
+               Sumof(frequency * midpoint)
           ------------------------------ 
                   Sumof (frequency)
   
@@ -292,9 +292,9 @@ Calculate the standard deviation of  5,8,10,12,12,19
 C
 ~
 Formula for standard deviation: 
-	
-	Sqrt ( Sumof(Xi - Mean)^2 / N)
-	
+        
+        Sqrt ( Sumof(Xi - Mean)^2 / N)
+        
 where Xi is eacg individual value in the given data
       mean is the mean of the data values
       and N is the count of data values
