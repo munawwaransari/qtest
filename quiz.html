@@ -140,7 +140,7 @@
 			    qIndex++;
 			  }
 			  if(!qLines[qIndex]) qEOF = 1;
-			  return '<pre>'+qText+'</pre>';
+			  return '<pre style="white-space: pre-wrap">'+qText+'</pre>';
 			}
 			
 			function readOptions(){
@@ -155,7 +155,7 @@
 			    qRadio += '<div style="align-items: flex-start;">'+
 			                 '<input type="radio" id="'+qLines[index][1]+'" name="opt" value="'+qLines[index][1]+'">'+
                        '<label for="'+qLines[index][1]+'">'+
-                          '<pre style="display:inline-block">'+qOptions+'</pre>'+
+                          '<pre style="white-space:pre-wrap;display:inline-block">'+qOptions+'</pre>'+
                        '</label>'+
                     '</div>';
 			    qIndex++;
@@ -191,7 +191,7 @@
 			    qIndex++;
 			  }
 			  if(!qLines[qIndex]) qEOF = 1;
-			  return "<pre>"+qSol+"</pre>";
+			  return '<pre style="white-space: pre-wrap">'+qSol+'</pre>';
 			}
 			
 			function moveToNextQuestion(){
