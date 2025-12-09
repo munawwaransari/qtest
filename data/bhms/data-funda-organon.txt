@@ -37,7 +37,7 @@ The central logical premise is that a disease can be cured by a substance that p
 [B] The Law of the Minimum Dose
 [C] The Law of Similars
 [D] Individualization
-B
+C
 ~
 The Law of Similars ("like cures like"): This central principle states that a substance which causes symptoms in a healthy person can be used in a highly diluted form to treat similar symptoms in a sick person.
 ~

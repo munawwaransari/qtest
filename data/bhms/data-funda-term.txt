@@ -1,0 +1,119 @@
+#
+# Homeopathy Fundamentals (Terminologies)
+# Sample Questions, Answers, and notes
+#
+- 1
+A substance or experience that slows, stops or reverses the curative action of a homeopathic medicine.
+
+[A] antibody
+[B] antidote
+[C] anecdote
+[D] vaccine
+B
+~
+The substance or experience that slows, stops, or reverses the curative action of a homeopathic medicine is generally referred to as an antidote or an inimical substance/force in homeopathy.
+~
+- 2
+A circumstance that makes a person’s overall health or a specific symptom better or worse (e.g. in weakness that's worse in the morning or a headache made better by cold applications.
+
+[A] modality 
+[B] constitution 
+[C] symptom
+[D] potency
+A
+~
+In homeopathy, a modality refers to a condition or circumstance that makes a person's symptoms or general state better (amelioration) or worse (aggravation). These specific modifying factors are considered crucial for understanding the individual's unique response to illness and are a primary guide in selecting the most appropriate single homeopathic remedy, known as the similimum
+~
+- 3
+A homeopathic text that indexes medicines that have been found to cause and/or cure specific symptoms.
+
+[A] repository 
+[B] homebook 
+[C] repertory
+[D] dictionary
+C
+~
+A homoeopathic repertory is an index or a dictionary of symptoms from the vast Homoeopathic Materia Medica. Its purpose is to systematically organize the symptoms (called "rubrics") of thousands of remedies and serve as a tool for a practitioner to find the most appropriate medicine (the "simillimum") for a patient's specific set of symptoms.
+~
+- 4
+The medicine most similar to the person’s totality of symptoms.
+
+[A] Succussion 
+[B] Simillimum 
+[C] Nosode
+[D] antidote
+B
+~
+The term "simillimum" in homeopathy refers to the most similar single remedy that matches the totality of a patient's symptoms. It is considered the ideal, individualized medicine for a patient's condition at a specific time, chosen according to the central homeopathic principle of similia similibus curentur ("like cures like"). 
+~
+- 5
+What is the meaning of Latin phrase "Similia Similibus Curentur"
+
+[A] "likes are cured by likes"
+[B] "The healing power of nature"
+[C] "When the cause ceases, the effect ceases"
+[D] ""Quickly, safely, and pleasantly"
+A
+~
+Law of Similars (Similia Similibus Curentur): The central principle of homeopathy, expressed in the Latin phrase "likes are cured by likes". It posits that a substance that causes a set of symptoms in healthy people can cure similar symptoms in sick people when given in minute doses.
+~
+- 6
+What is the meaning of Latin phrase "Materia medica"
+
+[A] "Medical journal"
+[B] "Medical material"
+[C] "Medical book"
+B
+~
+"Medical material," refers to the body of knowledge about medicines.
+~
+- 7
+The process of serially mixing a substance with water or alcohol to reduce the concentration. Many highly diluted remedies contain no detectable molecules of the original substance.
+
+[A] Tincture
+[B] Succession
+[C] Dilution
+[D] Centesimal
+C
+~
+Dilution: The process of serially mixing a substance with water or alcohol to reduce the concentration. Many highly diluted remedies contain no detectable molecules of the original substance.
+~
+- 8
+The strength of a homeopathic remedy, determined by the number of times it has been diluted and succussed
+
+[A] Mother Tincture
+[B] Constitution
+[C] Aggravation
+[D] Potentization
+D
+~
+Potency (Potentization): The strength of a homeopathic remedy, determined by the number of times it has been diluted and succussed. Homeopaths believe that a substance's therapeutic power increases with dilution and agitation, following the "law of minimum dose".
+~
+- 9
+Which if the following is not a potency scale used in homeopathy
+
+[A] centesimal
+[B] metric
+[C] quinquagintamillesimal
+[D] decimal
+B
+~
+The three primary potency scales used in homeopathic pharmacy are the centesimal (C) scale, the decimal (X or D) scale, and the quinquagintamillesimal (LM or Q) scale. Each scale is defined by a specific dilution ratio and preparation method. 
+~
+- 10
+Which of these is not a primary remedy in homeopathy
+
+[A] Nux Vomica
+[B] Belladonna
+[C] Arnica Montana
+[D] Analgesics
+D
+~
+"Primary remedies" in homeopathy often refers to a core set of commonly used treatments for acute, everyday ailments. The specific "primary remedies" can vary depending on the context (e.g., first aid, anxiety, digestive issues), as treatments are highly individualized in classical homeopathy.
+
+Nux vomica is a widely used homeopathic remedy made from the seeds of the "poison nut" tree (Strychnos nux-vomica), traditionally used for ailments like digestive problems, headaches, insomnia, and irritability. 
+
+Belladonna (or Atropa belladonna), also known as deadly nightshade, is a highly potent and poisonous plant that is used in extremely diluted doses in homeopathy.
+
+Arnica montana (also known as mountain tobacco, leopard's bane, or wolf's bane) is a widely used remedy, particularly for bruises, muscle soreness, pain, and inflammation resulting from physical trauma or overexertion. 
+~
