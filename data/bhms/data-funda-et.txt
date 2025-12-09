@@ -1,0 +1,320 @@
+#
+# Homeopathy Fundamentals (Entrance Tests)
+# Sample Questions, Answers, and notes
+#
+- 1
+The term "anosognosia" means
+
+[A] Loss of spatial recognition
+[B] Loss of position sense
+[C] Loss of appreciation or self-awareness
+[D] Loss of memory
+C
+~
+Anosognosia is a lack of insight or awareness that one has a health problem, often mental or neurological. It is a neurological/psychiatric condition where a person is unaware of their own illness (like schizophrenia, bipolar, stroke deficits) due to brain dysfunction, making treatment hard
+
+Cause: 
+Damage or dysfunction in specific brain areas, especially the right hemisphere.
+
+Impact: 
+Makes patients resistant to treatment because they don't believe they are ill, complicating care. 
+~
+-2 
+A full amelioration of the symptoms, yet no special relief of the patient after prescription of remedy signifies...
+
+[A] improper selection of curative medicine
+[B] Suffering from high grade inflammation
+[C] Idiosyncratic patient
+[D] latent underlying organic disease or deeper, chronic issues where the vital force isn't responding fully.
+D
+~
+In homeopathy, "A full amelioration of the symptoms, yet no special relief of the patient" signifies that the remedy matched the disease's physical manifestations but missed the deeper, essential nature (the totality of mental/emotional/vital symptoms), indicating the disease is likely incurable or requires a different remedy addressing the vital force, showing symptom improvement without true healing or vital energy restoration.
+
+Symptom Amelioration: The chosen medicine successfully addressed the objective symptoms (fever, pain, rash, etc.), showing it was similar to the disease picture.
+
+No Patient Relief: The patient's subjective state—their vitality, mental clarity, energy, overall feeling of well-being—doesn't improve; they still feel fundamentally unwell. 
+~
+- 3
+Consider the following statement:
+
+Rapid transmission of impulses through purkinje fibres are due to
+
+  I The purkinje fibres are large in size than other conducting fibres of heart 
+ II Extremely high level of permeability of the gap junctions with purkinje fibres
+III Purkinje fibres have a very few myofibrils
+ IV Purkinje fibres have more fibrous tissues
+
+Choose the most appropriate answer:
+[A] I, II and III only
+[B] I and IV only
+[C] I and III only
+[D] II and IV only
+A
+~
+Purkinje fibers are specialized, electrically excitable cardiac muscle fibers that transmit electrical impulses to the ventricles, ensuring they contract in a coordinated manner. They are the terminal part of the heart's electrical conduction system, spreading out through the inner walls of the ventricles to rapidly and efficiently trigger the muscle contractions needed to pump blood from the heart.
+
+The statement that Purkinje fibres have more fibrous tissues is incorrect in terms of cellular composition. Purkinje fibres are specialized muscle fibres (cells), not fibrous connective tissues. 
+~
+- 4
+The sensory modality which does not reach the thalamus directly is
+
+[A] Proprioception
+[B] Gustation
+[C] Nociception
+[D] Olfaction
+D
+~
+The sensory modality that does not reach the thalamus directly is smell (olfaction); it's the only sense that bypasses the thalamus's relay, projecting directly from the olfactory bulb to the primary olfactory cortex and limbic system for direct emotional and memory links, unlike vision, hearing, taste, and touch which all have key thalamic relays. 
+~
+- 5
+The commonest form of obstetric palsy encountered in puerperium is:
+
+[A] Erb's palsy
+[B] Torticollis
+[C] Foot drop
+[D] Carpel tunnel syndrome
+C
+~
+Erb's palsy is a common birth injury affecting the infant, while carpal tunnel syndrome (CTS) is a common maternal condition that can occur during pregnancy and persist into the puerperium (postpartum period).
+
+Foot drop, though less common overall than LFCN, is a serious form of obstetric palsy, typically involving the L5 nerve root or common peroneal nerve, leading to difficulty lifting the front part of the foot (dorsiflexion). 
+
+Key Points on Foot Drop in Puerperium:
+Cause: Compression of the lumbosacral nerve roots (especially L5) or the common peroneal nerve by the baby's head, maternal positioning (lithotomy), or forceps during delivery.
+
+Symptoms: Inability to lift the foot (foot drop), a slapping gait, weakness in the anterior compartment muscles, numbness/tingling on the outer leg and foot.
+~
+- 6
+One unit of packed RBC raises haemoglobin by ______________ gm/dl
+
+[A] 0.5
+[B] 1
+[C] 1.5
+[D] 2
+B
+~
+The generally accepted estimate is a ~10 g/L (1 g/dL) rise in Hb.
+
+One unit of packed red blood cells (PRBCs) typically raises a non-bleeding adult's hemoglobin (Hb) level by approximately 10 g/L (or 1 g/dL) and hematocrit by about 3%, though this can vary slightly by patient factors like body mass and pre-transfusion Hb. 
+
+Factors Influencing Increase: 
+The actual rise depends on the patient's weight, gender, and pre-transfusion Hb level, with lower starting Hb potentially leading to a greater relative increase.
+~
+- 7
+Dreams of running water is a symptom of
+
+[A] Natrum Muraticum
+[B] Natrum Sulpuricum
+[C] Stramonium
+[D] Opium
+B
+~
+In homeopathic practice, dreams are considered significant "general symptoms" that provide insight into a patient's subconscious and core emotional state, which helps in selecting the most appropriate, individualized remedy (simillimum). 
+
+Dreams of running water are a characteristic symptom associated with the remedy Natrum muriaticum (Nat. mur.). It is also linked to the remedy Medorrhinum, particularly when associated with other symptoms like urinary issues or a feeling of emotional overwhelm.
+~
+- 8
+Pain of stretch of CBD or Gallblader is referred to following areas except:
+
+[A] Epigastric region
+[B] Tip of right shoulder
+[C] Inferior angle of left scapula
+[D] Inferior angle of right scapula
+C
+~
+In both conventional medicine and homeopathy, pain resulting from a stretch or obstruction of the common bile duct (CBD) or gallbladder is characteristically referred to the right shoulder blade (scapula region) or the right flank/back. 
+~
+- 9
+Who amongst the following propogated the blood-letting method?
+
+[A] Galen
+[B] Hippocrates
+[C] Hahnemann
+[D] Brousseau
+D
+~
+Bloodletting as a practice originated in ancient Egypt and was established in ancient Greece, where Hippocrates and his followers integrated it into their medical theory. The French physician François Broussais was a major proponent who popularized the use of leeches for bloodletting in the 19th century, well after the time of Hippocrates. 
+
+Bloodletting is not a method used in homeopathy; in fact, the founder of homeopathy, Samuel Hahnemann, was a strong opponent of the practice of bloodletting. Homeopathy is a distinct system of alternative medicine based on the principle of "like cures like" and the use of highly diluted substances, a direct reaction against the aggressive and often harmful medical practices of his time, such as bloodletting. 
+~
+- 10
+Arrange the following sub-chapters of Urinary organs of Kent's Repertory in order of their appearance
+
+ 1. Urethra
+ 2. Urine
+ 3. Bladder
+ 4. Kidney
+ 5. Prostate
+ 
+[A] 1, 2, 3, 4, 5
+[B] 5, 3, 4, 1, 2
+[C] 3, 4, 5, 1, 2 
+[D] 3, 4, 1, 2, 5
+C
+~
+The chapters in Kent's Repertory generally follow an anatomical schema, starting from general symptoms and moving to particulars, or from head to toe. The "Urinary organs" section is a chapter that is further divided into specific organs, which appear in the sequence "Bladder, Kidney, Prostate, Urethra, Urine". 
+~
+- 11
+Match Symptoms with Medicine:
+ ---------------------------------------------------------------------------------
+ |   Symptoms                                          |    Medicine             |
+ |-----------------------------------------------------+-------------------------|
+ | A. Tea tasters cough due to inhaling of fungus      |   I. Mercurius          | 
+ |-----------------------------------------------------|-------------------------|
+ | B. Sensation of hair on the tongue                  |  II. Gelsimium          |
+ |-----------------------------------------------------|-------------------------|
+ | C. A human thermo meter, sensitive to heat and cold | III. Silicea            |
+ |-----------------------------------------------------|-------------------------|
+ | D. Nervous affection of cigarmakers                 |  IV. Kali hydroiodicum  |
+ |-----------------------------------------------------|-------------------------|
+ 
+[A] A <--> III,  B <---> I,   C <---> IV,  D <---> II 
+[B] A <--> III,  B <---> IV,  C <---> I,   D <---> II
+[C] A <-->  IV,  B <---> I,   C <---> III, D <---> II
+[D] A <-->  IV,  B <---> III, C <---> I,   D <---> II
+D
+~
+Symptoms for Mercurius:
+- Oral & Throat Issues, Excessive salivation, Bad breath, Sore, raw throat, Mouth ulcers, Swollen lymph etc.
+
+Symptoms for Gelsimium:
+- Anticipatory anxiety, Dullness and apathy, Emotional excitement, etc.
+- General weakness and heaviness, Trembling, Headaches, Drooping, etc.
+
+Symptoms for Silicea:
+- Minor injuries, Slow bone development (rickets), poor nutrition or imperfect assimilation of food, Profuse and offensive-smelling perspiration, Headaches, etc.
+
+Symptoms for Kali hydroiodicum:
+- Respiratory and Sinus Issues, Rheumatic and Joint Pain, Skin Conditions, etc.
+~
+- 12
+The genotype of Klinfelter syndrome is:
+
+[A] XXX
+[B] XO
+[C] XXY
+[D] XYY
+C
+~
+The genotype (karyotype) of classic Klinefelter syndrome is 47,XXY. This means individuals have an extra X chromosome in most of their cells, compared to the typical male karyotype of 46,XY. 
+~
+- 13
+Match Tumour Markers with Carcinomas:
+ -------------------------------------------------------------------------
+ |   Tumour Markers              |    Carcinomas                         |
+ |-------------------------------+---------------------------------------|
+ | A. Calcitonin                 |   I. Prostate Cancer                  | 
+ |-------------------------------|---------------------------------------|
+ | B. Alpha fetoprotein          |  II. Carcinoma of colon               |
+ |-------------------------------|---------------------------------------|
+ | C. Prostate specific antigen  |  III. Medullary carcinoma of thyroid  |
+ |-------------------------------|---------------------------------------|
+ | D. Carcino-embeyonic antigen  |   IV. Liver Cancer                    |
+ |-------------------------------|---------------------------------------|
+ 
+[A] A <-->  II,  B <--->  IV,  C <---> III,  D <---> I 
+[B] A <-->  IV,  B <--->  II,  C <---> I  ,  D <---> III
+[C] A <--> III,  B <--->  IV,  C <---> I  ,  D <---> II
+[D] A <-->  II,  B <---> III,  C <---> I  ,  D <---> IV
+C
+~
+Calcitonin is a well-established conventional tumor marker for medullary thyroid carcinoma (MTC), a specific type of cancer originating in the thyroid's C-cells.
+ 
+Alpha fetoprotein (AFP) is a widely used conventional tumor marker in conventional medicine for certain carcinomas, such as liver, testicular, and ovarian cancers. Its use in homeopathy is primarily as an indicator to monitor a patient's condition or response to homeopathic treatment, not as a diagnostic tool within homeopathic principles itself. 
+
+Prostate specific antigen is the primary conventional tumor marker used in the diagnosis and monitoring of prostate carcinoma. In general, homeopathy does not use standard biomedical tumor markers like PSA for diagnosis or monitoring.
+
+Carcinoembryonic antigen (CEA) is a well-established conventional tumor marker used in mainstream medicine for monitoring certain cancers. Its use in homeopathy is a separate matter, and scientific evidence supporting the use of homeopathy to alter CEA levels or treat cancer is limited in the provided search results. 
+~
+- 14
+Which of the following is not a labile cell ?
+
+[A] Transitional epithilium of bladder
+[B] Stratified squamous cell of cervix
+[C] Hematopoietic stem cell
+[D] Hepatocyte
+D
+~
+The term "labile cell" refers to a biological classification of cells that continuously divide and regenerate throughout life. In homeopathy, the term "labile" may also be used in a different, broader sense, such as describing a person's variable symptoms or constitution. 
+~
+- 15
+The taste sensor from the posterior one third of the tongue is transmitted through
+
+[A] Trigeminal nerve
+[B] Glassopharyngeal nerve
+[C] Facial nerve
+[D] Hypoglossal nerve
+B
+~
+The sensory pathway for taste on the tongue is divided among three cranial nerves: 
+
+Facial nerve (CN VII): 
+Carries taste information from the anterior two-thirds of the tongue (via the chorda tympani branch).
+
+Glossopharyngeal nerve (CN IX): 
+Carries taste information from the posterior one-third of the tongue.
+
+Vagus nerve (CN X): 
+Carries taste information from the epiglottis and lower pharynx (via the superior laryngeal nerve branch). 
+~
+- 16
+'Orgasm of blood' is mentioned in which chapter of Kent's Repertory 
+
+[A] Generalities
+[B] Female Genitalia
+[C] Fever
+[D] Head
+A
+~
+Kent's Repertory has 37 chapters. It is divided into sections that begin with "Mind" and end with "Generalities," and it contains thousands of headings and sub-headings for symptoms.  
+~
+- 17
+Which protein did Kent suggest for acute disease of patients who prove every remedy they get?
+
+[A] 30th, 200th, 1M
+[B] 30th and 200th
+[C] 200th and 1M
+[D] 30th and 1M
+B
+~
+Observation: Some patients are so sensitive (idiosyncratic) that they "prove every remedy they get" and are often considered incurable in a fundamental sense.
+
+Kent's Suggestion: For these oversensitive patients, Kent advised using a 30th and 200th potency to manage their acute conditions, rather than higher potencies which would cause excessive aggravations or new symptoms. 
+~
+- 18
+The most common site of nose bleed in children and young adults:
+
+[A] Floor of nose
+[B] Inferior turbinate
+[C] Little's area
+[D] Middle turbinate
+C
+~
+The most common site for nosebleeds (epistaxis) in children and young adults is Little's area, the highly vascular anterior part of the nasal septum (the wall between nostrils), due to dryness, picking, allergies, or colds, with bleeding usually being minor and self-limiting. 
+~
+- 19
+A 65 year old male alcoholic presents with 2 months history of swelling of the abdomen with shifting dullness and ankle oedema, shortness of breath on exertion. On examination, there are no signs of chronic liver disease. His pulse is 112/min with atrial fibrillation, apex beat is displaced downwards and laterally.
+
+What is the most likely diagnosis?
+
+[A] Deep vein thrombosis
+[B] Pericarditis
+[C] Nephrotic Syndrome
+[D] Cardiomyopathy
+D
+~
+The patient's clinical presentation is consistent with alcoholic cardiomyopathy (ACM), a type of dilated cardiomyopathy caused by long-term, heavy alcohol consumption. The standard and most crucial treatment is complete abstinence from alcohol, combined with conventional medical therapies for heart failure and atrial fibrillation. 
+~
+- 20
+Type I Diabetes Mellitus is associated with all of the following except:
+
+[A] Insulitis
+[B] Beta cell mass reduced
+[C] Amyloidosis change
+[D] Beta cell degranulation
+C
+~
+Type 1 Diabetes Mellitus is an autoimmune disorder resulting in the destruction of insulin-producing beta cells in the pancreas. In homeopathy, as per clinical observations reported by practitioners, it is associated with a variety of symptoms and comorbidities.
+
+In conventional medicine, Type 1 Diabetes Mellitus (T1DM) is not systematically associated with a specific type of systemic amyloidosis. However, a localized form called localized insulin-derived amyloidosis (LIDA) can occur as a rare complication of long-term subcutaneous insulin injections. 
+~
