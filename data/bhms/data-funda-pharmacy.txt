@@ -1,0 +1,163 @@
+#
+# Homeopathy Fundamentals (Pharmacy)
+# Sample Questions, Answers, and notes
+#
+- 1
+The scientific study of drugs from natural sources, like plants, animals, microbes, and minerals, focusing on their physical, chemical, biochemical, and biological properties, plus their history, cultivation, and uses.
+
+[A] Phytochemistry
+[B] Phramacognocy
+[C] Pharmocovigilence
+[D] Back Potency
+B
+~
+Pharmacognosy explores the vast pharmacopeia provided by nature, ensuring safe and effective use of natural medicines and inspiring modern drug development. 
+
+Key Aspects of Pharmacognosy:
+
+Natural Sources: Investigates substances from plants (phytochemicals), microorganisms, marine life, and animals.
+
+Drug Discovery: Identifies new drug leads and uses natural compounds as models for synthetic drugs (e.g., morphine, atropine).
+
+Quality & Standardization: Develops methods to identify, evaluate, and ensure the purity and potency of crude drugs and herbal formulations.
+
+Traditional Medicine: Studies and validates the uses of remedies in traditional systems (like Ayurveda, Traditional Chinese Medicine).
+
+Interdisciplinary Nature: Integrates botany, chemistry, biology, and pharmacology. 
+
+What it Involves:
+Morphology & Microscopy: Identifying plant parts and structures.
+Phytochemistry: Isolating and analyzing active chemical constituents (phytochemicals).
+Cultivation & Collection: Studying proper methods for harvesting natural products.
+Bioassay & Evaluation: Testing the biological activity and safety of natural substances. 
+~
+- 2
+A phase transition where a substance changes directly from a solid to a gas, skipping the liquid phase, like how dry ice turns into carbon dioxide gas.
+
+[A] Sublimation
+[B] Mercurius Sublimatus
+[C] Vaporization
+[D] Potentization
+A
+~
+In homeopathy, "sublimation" refers to processes that increase a substance's potency, often by converting it to a more subtle, energetic, or gaseous form, rather than the standard physical phase change (solid to gas) used in chemistry for purification. 
+
+While Mercurius Sublimatus is a known homeopathic remedy (a mercurial compound), the concept in homeopathy involves making medicines more powerful through techniques like potentization (dilution and succussion) or vaporization, aligning with the idea of "raising" (Latin sublimate) its healing force beyond gross material form, impacting the body more deeply. 
+~
+- 3
+In this method, a single vial is used. After the initial substance is diluted and succussed, a large portion of the liquid is poured out, and the vial is refilled with a new diluent (alcohol/water), retaining a small amount of the previous potency on the walls of the container.
+
+[A] Low Potency
+[B] High Potency
+[C] Medium Potency
+[D] Back Potency
+D
+~
+Back Potency: Back potency is a specific manufacturing method used to prepare a series of dilutions from a single container. This process is largely associated with the Korsakoff method and involves repeatedly filling and emptying a single vial, where the residue left on the walls and the remaining liquid form the starting point for the next potency level. Some modern manufacturers use automatic digital "back potency makers" to ensure consistency in this process. 
+
+Low Potency: Low potency, on the other hand, is a general classification for remedies that have undergone fewer stages of dilution and succussion (vigorous shaking), meaning they contain more of the original substance's molecules compared to high potencies. 
+
+High Potency: High potency means stronger effects, greater risk of side effects, and use for severe conditions (e.g., thick skin areas), while medium potency offers a balance, good for less severe issues or sensitive skin areas like eyelids, balancing efficacy and safety.
+~
+- 4
+A concentrated, liquid extract of a natural substance (usually from plants, but sometimes from minerals or animal sources) that serves as the starting material for all other homeopathic remedies.
+
+[A] Dilution
+[B] Mother Tincture
+B
+~
+In homeopathy, a Mother Tincture (often denoted as Q or Ø), is a concentrated liquid extract of a natural substance (plant, animal, or mineral) that serves as the raw material for all subsequent homeopathic dilutions. It is a foundational element in the preparation of remedies and can also be used directly as a form of herbal medicine.
+~
+- 5
+Which if this is Class III mother tincture?
+
+[A] Most juicy plants: Prepared from fresh, highly succulent plants
+[B] Medium juicy plants: Prepared from fresh plants with moderate moisture content
+[C] Least juicy plants: Prepared from fresh, less succulent plants.
+[D] Dried vegetable and animal substances: Prepared from dried materials or fresh animal substances
+C
+~
+Homeopathic pharmacopoeias classify mother tinctures into different classes based on the nature of their source material and the required preparation method. The primary classifications include: 
+
+Class I: Most juicy plants: Prepared from fresh, highly succulent plants.
+
+Class II: Medium juicy plants: Prepared from fresh plants with moderate moisture content.
+
+Class III: Least juicy plants: Prepared from fresh, less succulent plants.
+
+Class IV: Dried vegetable and animal substances: Prepared from dried materials or fresh animal substances.
+~
+- 6
+Which if this is Class IV mother tincture?
+
+[A] Most juicy plants: Prepared from fresh, highly succulent plants
+[B] Medium juicy plants: Prepared from fresh plants with moderate moisture content
+[C] Least juicy plants: Prepared from fresh, less succulent plants.
+[D] Dried vegetable and animal substances: Prepared from dried materials or fresh animal substances
+D
+~
+Homeopathic pharmacopoeias classify mother tinctures into different classes based on the nature of their source material and the required preparation method. The primary classifications include: 
+
+Class I: Most juicy plants: Prepared from fresh, highly succulent plants.
+
+Class II: Medium juicy plants: Prepared from fresh plants with moderate moisture content.
+
+Class III: Least juicy plants: Prepared from fresh, less succulent plants.
+
+Class IV: Dried vegetable and animal substances: Prepared from dried materials or fresh animal substances.
+~
+- 7
+A unique category of remedies prepared from non-material, energetic sources that cannot be physically weighed, measured, or quantified in the traditional sense. These are dynamic energies from natural and physical reactions that are believed to have significant medicinal effects. 
+
+[A] Ponderabilia
+[B] Imponderabia
+B
+~
+"Imponderabilia" refers to intangible factors, circumstances, or energies that can't be precisely measured or weighed but exert significant influence, contrasting with quantifiable things, and are key in homeopathy for remedies derived from forces like electricity or magnetism, rather than physical substances. So, it's Imponderabilia (intangible influences) vs. Ponderabilia (weighable things), often seen in the context of Homeopathy (energetic cures) vs. Conventional Medicine (material doses). 
+~
+- 8
+Which of these are scales of potentisation in homeopathy?
+   I - X or D
+  II - C or CH
+ III - LM or Q
+ 
+[A] I and II only
+[B] I and II only
+[C] I, II and III
+[D] None of these
+C
+~
+The scales commonly discussed in the context of "potentization" (Centesimal, Decimal, and Fifty Millesimal) are all internal to homeopathic practice: 
+
+Decimal scale (X or D): Introduced by Constantine Hering, this involves a 1:10 dilution ratio at each stage.
+
+Centesimal scale (C or CH): Developed by Samuel Hahnemann, the founder of homeopathy, this uses a 1:100 dilution ratio per stage.
+
+Fifty Millesimal scale (LM or Q): Hahnemann's final refinement, this scale uses an even greater dilution ratio (approximately 1:50,000 per step) to produce a gentler, faster action with less risk of initial aggravation.
+~
+- 9
+The science of monitoring, detecting, assessing, understanding, and preventing Adverse Drug Reactions (ADRs), which are harmful, unintended responses to medicines at normal doses.
+
+[A] Pharmacovigilance
+[B] Pharmacognosy
+[C] ADR
+A
+~
+Pharmacovigilance (PV) is the science of monitoring, detecting, assessing, understanding, and preventing Adverse Drug Reactions (ADRs), which are harmful, unintended responses to medicines at normal doses. Essentially, PV uses ADR reporting (like skin rashes, nausea, fatigue) to identify drug safety issues, improve patient care, and ensure medicines are safer than the diseases they treat, with systems like India's PVPI helping gather this crucial data from doctors and patients. 
+
+Pharmacognosy:  focusses on natural products as drugs.
+Activities: Studying crude drugs from plants, animals, and minerals, including their identification, cultivation, extraction, and chemical characterization.
+Goal: Discover and understand drugs derived from nature. 
+~
+- 10
+Which of these is not a common Alcohol concentration found in homeopathy?
+
+[A] 30% v/v
+[B] 95% v/v
+[C] 99% v/v
+C
+~
+Homeopathic medicines can be found with a wide range of alcohol content. 
+30% v/v (a common concentration in many liquid remedies)
+95% v/v (often used in the initial preparation stages or for specific high-alcohol-content tinctures) 
+~
