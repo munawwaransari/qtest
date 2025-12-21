@@ -14,13 +14,108 @@ B
 The sciatic nerve is the thickest (and longest) nerve in the human body, originating in the lower back, running through the buttocks and down the back of each leg, and is a bundle of nerves that can reach up to 2 centimeters in width, connecting the spinal cord to the leg and foot. 
 ~
 - 2
+Long Bones
+
+[A] Scapula
+[B] Tibia
+[C] Patella
+[D] Carpals
+B
+~
+Long Bones: Longer than wide, provide levers for movement (e.g., Femur, Humerus, Tibia).
+~
+- 3
+Irregular Bones
+
+[A] Vertebrae
+[B] Humerus
+[C] Kneecap
+[D] Tarsals
+A
+~
+Irregular Bones: Complex shapes, don't fit other categories (e.g., Vertebrae, Pelvis, some Facial bones).
+~
+- 4
+Short Bones
+
+[A] Vertebrae
+[B] Humerus
+[C] Kneecap
+[D] Tarsals
+D
+~
+Short Bones: Cube-shaped, provide stability (e.g., Carpals in wrist, Tarsals in ankle).
+~
+- 5
+Sesamoid Bones
+
+[A] Vertebrae
+[B] Humerus
+[C] Kneecap
+[D] Tarsals
+D
+~
+Sesamoid Bones: Small, round bones embedded in tendons (e.g., Patella/kneecap).
+~
+- 6
 Foot drop is caused by injury to
 
-[A] Femoral nerve
+[A] Peroneal verve
 [B] Sciatic nerve
 [C] Obtrutor nerve
 [D] Tibial nerve
-
+A
 ~
-~
+Foot drop (also called drop foot) happens when you can’t raise the front part of your foot due to weakness or paralysis of the muscles that lift it. It’s a symptom of several possible underlying conditions and can be temporary or long-term (chronic).
 
+Foot drop has several possible causes, typically due to an issue with your nerves and/or muscles. The most common causes are lumbar radiculopathy and peroneal nerve injury.
+~
+- 7
+The part of the brain responsible for coordinating voluntary movements and balance. Dysfunction or damage to it results in conditions like cerebellar ataxia, which can manifest as difficulty with walking, speech, and coordination.
+
+[A] Ataxia
+[B] Bovine
+[C] Cerebellum
+[D] Retina
+C
+~
+The Cerebellum is the part of the brain responsible for coordinating voluntary movements and balance. Dysfunction or damage to it results in conditions like cerebellar ataxia, which can manifest as difficulty with walking, speech, and coordination. 
+~
+- 8
+Which of these is unpaired cartilages of larynx
+
+[A] Arytenoid Cartilages
+[B] Epiglottis
+[C] Corniculate Cartilages
+[D] Cuneiform Cartilages
+B
+~
+The larynx (voice box) is supported by nine cartilages: three unpaired (thyroid, cricoid, epiglottis) and three paired (arytenoid, corniculate, cuneiform), forming its framework, which controls sound production by allowing muscles to move the vocal cords, with the thyroid forming the Adam's apple, the cricoid as a signet ring base, and the epiglottis acting as a lid.  
+
+Unpaired Cartilages (Single):
+
+Thyroid Cartilage: The largest, forming the front and sides (Adam's apple), made of hyaline cartilage, connects to the cricoid below and hyoid bone above. 
+
+Cricoid Cartilage: A signet ring shape, forming the base of the larynx, connecting to the trachea below.
+
+Epiglottis: A leaf-shaped elastic cartilage that covers the airway opening during swallowing. 
+~
+- 9
+Which of these is paired cartilages of larynx
+
+[A] Arytenoid Cartilages
+[B] Epiglottis
+[C] Cricoid Cartilage
+[D] Thyroid Cartilage
+A
+~
+The larynx (voice box) is supported by nine cartilages: three unpaired (thyroid, cricoid, epiglottis) and three paired (arytenoid, corniculate, cuneiform), forming its framework, which controls sound production by allowing muscles to move the vocal cords, with the thyroid forming the Adam's apple, the cricoid as a signet ring base, and the epiglottis acting as a lid.  
+
+Paired Cartilages (Two of each):
+
+Arytenoid Cartilages: Pyramidal, sitting atop the cricoid, with processes for vocal ligament and muscle attachment. 
+
+Corniculate Cartilages: Small nodules atop the arytenoids, part of the aryepiglottic folds. 
+
+Cuneiform Cartilages: Club-shaped elastic cartilages within the aryepiglottic folds, providing support. 
+~
