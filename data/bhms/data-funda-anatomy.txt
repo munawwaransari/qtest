@@ -119,3 +119,20 @@ Corniculate Cartilages: Small nodules atop the arytenoids, part of the aryepiglo
 
 Cuneiform Cartilages: Club-shaped elastic cartilages within the aryepiglottic folds, providing support. 
 ~
+- 10
+A narrow, midline cavity in the diencephalon, connected to the lateral ventricles by the interventricular foramen.
+
+[A] Left Lateral Ventricles
+[B] Right Lateral Ventricles
+[C] Third Ventricle 
+[D] Fourth Ventricle
+C
+~
+There are four interconnected ventricles in the brain that produce and circulate cerebrospinal fluid (CSF): the two Lateral Ventricles (one in each hemisphere), the midline Third Ventricle, and the Fourth Ventricle, which lies between the cerebellum and brainstem and connects to the spinal cord's central canal. 
+
+Lateral Ventricles (Two): C-shaped cavities, one in each cerebral hemisphere, that are the largest ventricles.
+
+Third Ventricle (One): A narrow, midline cavity in the diencephalon, connected to the lateral ventricles by the interventricular foramen.
+
+Fourth Ventricle (One): Located in the hindbrain, between the pons/medulla and cerebellum, connecting to the third ventricle via the cerebral aqueduct and continuing as the spinal cord's central canal. 
+~
