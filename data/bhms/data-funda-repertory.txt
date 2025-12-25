@@ -1,0 +1,221 @@
+#
+# Homeopathy Fundamentals (Repertory)
+# Sample Questions, Answers, and notes
+#
+- 1
+Select which of these outlines the evaulation of sysmptoms stated by Hehnemann.
+
+ I  - "More striking, singular, uncommon and peculiar (characteristic) symptoms" are the most important for selecting a remedy.
+ II - Symptoms related to a specific anatomical part or organ are given less importance unless they are highly peculiar or "characteristic".
+ III - The totality of symptoms forms the true picture of the disease, but this totality must be composed of the characteristic symptoms that make the patient's case unique.
+ IV - Uses three grades to denote the relative importance or frequency of a symptom appearing in drug provings and clinical verification, which aids in this hierarchical evaluation. 
+
+[A] I & II only
+[B] I & III only
+[C] All
+[D] None
+B
+~
+Hahnemann's Evaluation of Symptoms
+Dr. Samuel Hahnemann, the founder of homeopathy, outlined his method in the Organon of Medicine. 
+
+Focus on the Peculiar: 
+Hahnemann stated that the "more striking, singular, uncommon and peculiar (characteristic) symptoms" are the most important for selecting a remedy.
+
+General vs. Common Symptoms: 
+He distinguished between general symptoms (which he considered "common" and of little use for individualization, such as headache or loss of appetite) and the individualizing, characteristic symptoms.
+
+Totality of Symptoms: 
+The totality of symptoms forms the true picture of the disease, but this totality must be composed of the characteristic symptoms that make the patient's case unique.
+
+Case Taking: 
+The physician should investigate the patient's entire condition, including circumstances leading to the symptoms and individual sensitivities, to find these characteristic expressions. 
+~
+- 2
+Select which of these outlines the evaulation of sysmptoms stated by Kents.
+
+ I  - "More striking, singular, uncommon and peculiar (characteristic) symptoms" are the most important for selecting a remedy.
+ II - Symptoms related to a specific anatomical part or organ are given less importance unless they are highly peculiar or "characteristic".
+ III - The totality of symptoms forms the true picture of the disease, but this totality must be composed of the characteristic symptoms that make the patient's case unique.
+ IV - Uses three grades to denote the relative importance or frequency of a symptom appearing in drug provings and clinical verification, which aids in this hierarchical evaluation. 
+
+[A] II & IV only
+[B] I & II only
+[C] All
+[D] None
+A
+~
+Kent's Evaluation of Symptoms
+Dr. James Tyler Kent developed a more structured, hierarchical approach, influenced by the philosophy that disease originates in the inner self (mind) and progresses outward to the body. 
+
+Hierarchy of Symptoms: 
+Kent established a clear grading system for symptom importance.
+
+Mental Generals: 
+These are the highest in Kent's hierarchy (e.g., desires, aversions, emotions, memory) because they express "the man himself".
+
+Physical Generals: 
+Symptoms that affect the patient as a whole physically (e.g., general thermal reactions, desires for specific foods, overall energy levels, menstrual symptoms).
+
+Particular Symptoms: 
+Symptoms related to a specific anatomical part or organ (e.g., pain in the knee, rash on the arm). These are given less importance unless they are highly peculiar or "characteristic".
+
+From Center to Circumference: 
+Kent emphasized studying the patient's expressions from the "innermost to outermost, from mind to skin," believing that a cure should follow this path.
+
+Grading in Repertory: 
+Kent's Repertory of Homoeopathic Materia Medica uses three grades to denote the relative importance or frequency of a symptom appearing in drug provings and clinical verification, which aids in this hierarchical evaluation. 
+~
+- 3
+Which of these statements define Boenninghausen's Doctrine of Grand Generalization.
+
+[A] A hierarchical system, prioritizing mental generals (will, intellect, emotions), then physical generals (overall physical condition, e.g., desires/aversions, response to weather, sleep), and finally, particular symptoms (local symptoms of specific body parts).
+[B] The totality of symptoms forms the true picture of the disease, but this totality must be composed of the characteristic symptoms that make the patient's case unique.
+[C] a principle where local symptoms (like pain in a knee) are elevated to a general, whole-person level by applying their sensations and modalities (worse/better factors) to the entire individual, completing the symptom picture for better remedy matching, alongside his Doctrine of Concomitants (always-present peculiar symptoms)
+C
+~
+In homeopathy, Boenninghausen's Doctrine of Grand Generalization is a principle where local symptoms (like pain in a knee) are elevated to a general, whole-person level by applying their sensations and modalities (worse/better factors) to the entire individual, completing the symptom picture for better remedy matching, alongside his Doctrine of Concomitants (always-present peculiar symptoms). 
+
+This contrasts with other methods by focusing on a broader, more complete totality, especially useful for cases with strong physical generals and modalities rather than mental symptoms, making remedies more specific. 
+~
+- 4
+Arrange the steps in case analaysis to their correct order
+
+  I - Symptom Evaluation
+ II - Case-Taking (Data Collection)
+III - Follow-up and Causality Assessment
+ IV - Prognosis and Remedy Selection
+  V - Repertorization
+
+[A] I, II, V, IV, III
+[B] II, I, IV, V, , III
+[C] II, I, V, IV, III
+[D] II, IV, I, V, III
+C
+~
+Key Steps in Homeopathic Case Analysis
+The process typically involves several stages, often detailed in foundational texts like the "Homeopathic Methodology" workbook by Todd Rowe. 
+
+Case-Taking (Data Collection): 
+This initial phase involves a comprehensive patient interview to gather detailed information about their physical, emotional, and psychological symptoms, medical history, family history, and reactions to environmental factors (food, weather, etc.). The goal is to capture a complete picture of the patient's illness experience.
+
+Symptom Evaluation: 
+The gathered symptoms are then evaluated and categorized based on their importance in the case.
+Common Symptoms: General symptoms related to the disease pathology (e.g., a cough in a cold case) are less useful for individualization.
+
+Characteristic Symptoms: 
+These are "strange, rare, or peculiar" symptoms that individualize the patient (e.g., a headache better by hitting the head against a hard surface, or specific food cravings/aversions). These are considered the most important for selecting a remedy.
+
+Repertorization: 
+The characteristic symptoms are cross-referenced in a homeopathic repertory (a vast index of symptoms and their associated remedies). This process helps narrow down the potential medicines that match the patient's unique symptom pattern.
+
+Materia Medica Consultation: 
+The potential remedies identified during repertorization are then studied in the Materia Medica (a reference of symptoms produced by different substances in healthy individuals) to confirm the best match. The homeopath aims to find the remedy whose known symptom picture most closely mirrors the patient's presenting symptoms.
+
+Prognosis and Remedy Selection: 
+The homeopath evaluates the patient's overall condition and level of health to determine the prognosis, select the appropriate potency and dosage, and decide on the repetition schedule. The final selection is a blend of clinical experience, knowledge of the Materia Medica, and the "art" of applying these principles.
+
+Follow-up and Causality Assessment: 
+After prescribing, the homeopath monitors the patient's response. Improvement following Hering's rule (symptoms disappearing in reverse order of their appearance, from inside outward, from more important organs to less important ones) is seen as an indicator of a positive outcome and suggests a causal relationship between the medicine and the improvement. Tools like the modified Naranjo criteria (MONARCH) are used to systematically assess the likelihood that the changes observed are due to the homeopathic treatment.
+~
+- 5
+Standardized, coded symptom descriptions found in a homeopathic repertory
+
+[A] a large index of sypmtoms
+[B] similimum
+[C] rubrics
+[D] modality
+C
+~
+In homeopathy, rubrics are standardized, coded symptom descriptions found in a homeopathic repertory (a large index of symptoms and remedies) that help a homeopath find the single, most similar remedy (similimum) for a patient by translating the patient's unique complaints (mental, physical, emotional) into specific, repertorial language. They act as 'headings' (from Latin rubrica) organizing symptoms like "Mind; Anxiety; evening," or "Stomach; Pain; burning," guiding the practitioner to remedies that cover that specific symptom, modality (aggravation/amelioration), or sensation
+~
+- 6
+the absence of a common or expected symptom typically associated with a specific disease
+
+[A] Positive general
+[B] Negative general
+[C] Pathological general
+[D] particulars
+B
+~
+In homeopathy, generals relate to the patient as a whole person (e.g., mental state, overall reaction to temperature, energy levels), while particulars relate to specific parts, organs, or functions of the body (e.g., a pain in the knee, a headache location). Generals are considered higher in value for prescribing a constitutional remedy, as they reflect the core individual, while particulars help to fill in details and differentiate between similar remedies.
+
+A negative general symptom is the absence of a common or expected symptom typically associated with a specific disease, which then becomes a peculiar and significant individualizing characteristic for selecting a remedy. 
+~
+- 7
+A concept in homeopathy that integrates the patient's entire life history, from birth to the present, to understand the fundamental cause and progression of their illness.
+
+[A] Essential Evolutionary Totality (EET)
+[B] The Single Remedy
+[C] Vital Force (or Life Principle)
+[D] Theory of Chronic Diseases/Miasms
+A
+~
+The Essential Evolutionary Totality (EET) is a concept in homeopathy that integrates the patient's entire life history, from birth to the present, to understand the fundamental cause and progression of their illness. It is not merely a static collection of symptoms but a dynamic representation of the individual's journey through time. 
+~
+- 8
+Select the approprate answer:
+Principal Approaches Based on Symptom Evaluation: This method emphasizes the concept of a "complete symptom" (location, sensation, modalities, and concomitants) and the "grand generalization" of modalities (meaning a modality of one symptom may apply to all others). It is applicable when mental symptoms are non-descript but physical generals and concomitants are present.
+
+[A] Kentian Method
+[B] Boger's Method
+[C] Boenninghausen's Method
+C
+~
+Principal Approaches Based on Symptom Evaluation:
+Different masters of homeopathy developed specific approaches to symptom hierarchy and evaluation, which dictate the appropriate repertory to use: 
+
+Kentian Method: This approach prioritizes mental symptoms and general symptoms (physical generals like desires, aversions, reactions to temperature) over particular symptoms (symptoms of specific body parts). It is most useful when strong mental and general symptoms are present.
+
+Boenninghausen's Method: This method emphasizes the concept of a "complete symptom" (location, sensation, modalities, and concomitants) and the "grand generalization" of modalities (meaning a modality of one symptom may apply to all others). It is applicable when mental symptoms are non-descript but physical generals and concomitants are present.
+
+Boger's Method: This method gives importance to causative modalities and pathological generals (e.g., changes in tissues or pathology that affect the person as a whole), along with physical generals and concomitants. It is useful in cases where pathological information is significant. 
+~
+- 9
+Whihc of these methods use rubrics and their corresponding remedies/grades are manually written down. This method is time-consuming but helps in learning the repertory and materia medica well.
+
+[A] Repertorial Chart/Sheet 
+[B] Card System Method
+[C] Plain Paper Method
+[D] Computer Software
+C
+~
+Practical Techniques
+The mechanical process of working out a case using a repertory has evolved from manual to digital methods: 
+
+Plain Paper Method: 
+Rubrics and their corresponding remedies/grades are manually written down. This method is time-consuming but helps in learning the repertory and materia medica well.
+
+Repertorial Chart/Sheet: 
+Pre-printed sheets with a list of medicines in columns and rows for symptoms are used to mark scores, saving time compared to the plain paper method.
+
+Card System Method: 
+This method uses a system of punched cards, where each card represents a rubric. Stacking the cards reveals the common remedies through the holes. This system is largely outdated.
+
+Computer Software: 
+Modern homeopathic software like RADAR, Hompath, and ISIS are widely used, offering fast and efficient repertorisation with instant results, a vast database of rubrics, and various analytical tools. 
+~
+- 10
+What are modalities?
+
+[A] Symptoms appearing at the same time as the main complaint but seemingly unrelated to the main pathology. 
+[B] Relate to a specific part, organ, or function of the body (e.g., knee pain, stomach ache).
+[C] The most unique, unusual, or strange symptoms that are key to individualizing the case and selecting the similimum (the most similar remedy).
+[D] Circumstances that aggravate or ameliorate a symptom (e.g., pain "worse with motion," "better with heat").
+D
+~
+Key Symptom Types:
+
+Subjective Symptoms: Experienced and described by the patient (e.g., pain, nausea, anxiety).
+
+Objective Symptoms (Signs): Observable by others or measurable by the physician (e.g., swelling, rash, lab findings).
+
+General Symptoms: Relate to the patient as a whole person, including mental state, emotions, and overall reactions to environmental factors like weather and food.
+
+Particular Symptoms: Relate to a specific part, organ, or function of the body (e.g., knee pain, stomach ache).
+
+Characteristic Symptoms: The most unique, unusual, or strange symptoms that are key to individualizing the case and selecting the similimum (the most similar remedy).
+
+Modalities: Circumstances that aggravate or ameliorate a symptom (e.g., pain "worse with motion," "better with heat").
+Concomitant Symptoms: Symptoms appearing at the same time as the main complaint but seemingly unrelated to the main pathology. 
+~
