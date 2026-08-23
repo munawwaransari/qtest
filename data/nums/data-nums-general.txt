@@ -1,0 +1,49 @@
+#
+# Number System
+# Sample Questions, Answers, and notes
+#
+- 1
+Choose incorrect option about positional Number System?
+
+[A] Uses a base or radix (like base 10 or base 2).
+[B] Needs a zero as a placeholder.
+[C] Uses place values where a digit's value depends on its location in a number
+[D] Value of a symbol stays the same anywhere.
+D
+~
+A positional number system uses place values where a digit's value depends on its location in a number (like the decimal system where '5' in 50 means fifty). 
+So th value of a symbol changes based on its position.
+~
+- 2
+Which of these is not a positional number system?
+
+[A] Decimal
+[B] Roman
+[C] Binary
+[D] Octal
+B
+~
+A non-positional number system uses symbols that keep the same value no matter where they sit (like Roman numerals where 'I' is always one).
+~
+- 3
+Which of these is a positional number system?
+
+[A] Binary
+[B] Roman
+[C] Babylonian Sign-Value
+[D] Tally Marks
+A
+~
+ A non-positional number system uses symbols that keep the same value no matter where they sit (like Roman numerals where 'I' is always one).
+~
+- 4
+Which of these is not a valid number?
+
+[A] (10)<sub>2</sub>
+[B] (C1)<sub>16</sub>
+[C] (10)<sub>B</sub>
+[D] (99)<sub>100</sub>
+C
+~
+ The radix of a positional number system must be integer value greater than 1
+~

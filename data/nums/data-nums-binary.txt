@@ -1,0 +1,16 @@
+#
+# Binary Number System
+# Sample Questions, Answers, and notes
+#
+- 1
+What is the LSB (Least Significant Byte) of the 16-bit binary number 101?
+
+[A] 1
+[B] 00000101
+[C] 0
+[D] None of these
+C
+~
+The 16-bit number (101)<sub>2</sub> would be (00000000 00000101)<sub>2</sub>.
+So the LSB=00000000 and MSB=00000101
+~

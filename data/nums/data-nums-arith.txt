@@ -1,0 +1,72 @@
+#
+# Number System Conversions
+# Sample Questions, Answers, and notes
+#
+- 1
+Subtract (110)<sub>2</sub> from (111)<sub>2</sub>
+
+[A] (111)<sub>2</sub>   
+[B] (001)<sub>2</sub>   
+B
+~
+<b>using 2's compliment method:</b>
+To subtract binary number B (subtrahend) from A (minuend) using 2's complement, find the 2's complement of B, add it to A, and interpret the final carry. If a carry occurs, discard it for a positive result; if no carry occurs, take the 2's complement of the sum and make it negative.
+
+first number  = (00000111)<sub>2</sub>
+second number = (00000110)<sub>2</sub>
+
+2's compliment of second number: [1's compliment] + 1
+    =   (001)<sub>2</sub>     [1's compliment]
+      + (  1)<sub>2</sub>      plus 1
+    =   (010)<sub>2</sub>
+
+Subtraction = [first number] + [2's compliment of second number]
+    
+          1   <--- carry
+         (111)<sub>2</sub>
+         (010)<sub>2</sub>
+   +------------------
+       (1 001)<sub>2</sub>   
+        |
+        ---> extra carry bit indicates a positive result 
+~
+- 2
+Subtract (1000)<sub>2</sub> from (110)<sub>2</sub>
+
+[A] (111)<sub>2</sub>   
+[B] (1111)<sub>2</sub>   
+[C] (0111)<sub>2</sub>   
+B
+~
+<b>using 2's compliment method:</b>
+To subtract binary number B (subtrahend) from A (minuend) using 2's complement, find the 2's complement of B, add it to A, and interpret the final carry. If a carry occurs, discard it for a positive result; if no carry occurs, take the 2's complement of the sum and make it negative.
+
+first number  = (0110)<sub>2</sub>
+second number = (1000)<sub>2</sub>
+
+2's compliment of second number: [1's compliment] + 1
+
+         111  <-- carry over
+    =   (0111)<sub>2</sub>     [1's compliment]
+      + (   1)<sub>2</sub>      plus 1
+    =   (1000)<sub>2</sub>
+
+Subtraction = [first number] + [2's compliment of second number]
+    
+               <--- carry
+         (0110)<sub>2</sub>
+         (1000)<sub>2</sub>
+   +------------------
+       (? 1110)<sub>2</sub>   
+        |
+        ---> no extra carry bit indicates a negatove result 
+
+   Answer = 2' compliment of 1110
+          
+          =  1110      [1's  compliment]
+           +    1
+           -------------   
+         =   1111
+             |
+             ------------ here MSB indicates -1 (negative result)
+~

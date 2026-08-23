@@ -14,6 +14,13 @@
 		  var qLines = null;
 			var quizzesMap = [];
 			
+			window.onbeforeunload = function(ev){
+				var c_res = confirm();
+				if(c_res == false){
+					ev.preventDefault();
+				}
+			};
+
 			window.onload = function(){
 				var category = qCat = decodeURI(getParamValue("category"));
 				var topicName = qTopic = decodeURI(getParamValue("topic"));
@@ -55,31 +62,31 @@
 			function nextQ(){
 			  try
 			  {
-			     var userRes = $('input[name="opt"]');
-	         if(userRes.length > 0 && userRes.is(":checked") == false)
-	            return;
-	         
-	         if($("#btn-Chk").is(":visible")){
-	            checkAnswer(1);
-	         }
-			     showResults();
-			     
-			     $("#btn-Chk").hide();
-		       $("#qSolution").hide();
-		       qA = "";
-		       const map = loadTextIntoQuiz(qCat, qTopic);
-				   if(qEOF == 0){	  
-				      $("#btn-Chk").show();
-				      $("#qNumber").text("Question - "+ map.num);
-				      $("#qText").html(map.qText+"<br/>"+map.qCode);
-				      $("#qOptions").html(map.qOptions);
-				      $("#qSolution").html(map.qSol);
-				      qA = map.qAnswer;
-				   }
-				   else{
-		        //$("#btn-Result").show();
-		        $("#btn-Nxt").hide();
-		       }
+					//var userRes = $('input[name="opt"]');
+					//if(userRes.length > 0 && userRes.is(":checked") == false)
+					//	return;
+					
+					if($("#btn-Chk").is(":visible")){
+						checkAnswer(1);
+					}
+					showResults();
+					
+					$("#btn-Chk").hide();
+					$("#qSolution").hide();
+					qA = "";
+					const map = loadTextIntoQuiz(qCat, qTopic);
+						if(qEOF == 0){	  
+							$("#btn-Chk").show();
+							$("#qNumber").text("Question - "+ map.num);
+							$("#qText").html(map.qText+"<br/>"+map.qCode);
+							$("#qOptions").html(map.qOptions);
+							$("#qSolution").html(map.qSol);
+							qA = map.qAnswer;
+						}
+						else{
+						//$("#btn-Result").show();
+						$("#btn-Nxt").hide();
+					}
 				} 
 				catch (error) {
 					  console.error("Fetch error:", error);

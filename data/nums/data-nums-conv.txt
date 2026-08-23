@@ -1,0 +1,136 @@
+#
+# Number System Conversions
+# Sample Questions, Answers, and notes
+#
+- 1
+Which number is different from others?
+
+[A] (11010)<sub>2</sub>
+[B] (11)<sub>4</sub>
+[C] (32)<sub>8</sub>
+[D] (1A)<sub>16</sub>
+C
+~
+(11010)<sub>2</sub> = 1x2<sup>4</sup> + 1x2<sup>3</sup> + 0x2<sup>2</sup> + 1x2<sup>1</sup> + 0x2<sup>0</sup> = 26
+(11)<sub>4</sub>    = 1x4<sup>1</sup> + 1x4<sup>0</sup> = 5
+(32)<sub>8</sub>    = 3x8<sup>1</sup> + 1x8<sup>0</sup> = 26
+(1A)<sub>16</sub>   = 3x16<sup>1</sup> + 1x16<sup>0</sup> = 26
+~
+- 2
+Convert (36)<sub>10</sub> to binary?
+
+[A] (10100)<sub>2</sub>
+[B] (00101)<sub>2</sub>
+A
+~
+using division method Double Dabble :
+
+             2 | 36   Remainer
+             --+-----
+             2 | 18    0   ^
+             --+----       |
+             2 |  9    0   |
+             --+----       |
+             2 |  4    1   |
+             --+----       |
+             2 |  2    0   |
+             --+----       |
+             2 |  1        |
+                  ---------- (take remainders in reverse order)
+
+Answer: 10100
+~
+- 3
+Convert (10101)<sub>2</sub> to Decimal?
+
+[A] 35
+[B] 36
+[C] 37
+C
+~
+using base factorization method:
+   (10101)<sub>2</sub> 
+   = 1x2<sup></sup> + 0x2<sup></sup> + 1x2<sup></sup> + 0x2<sup></sup> + 1x2<sup></sup> 
+   = 1x32 + 0 + 1x4 + 0 + 1
+   = 32 + 4 + 1
+   = 37
+
+Answer: (37)<sub>10</sub>
+~
+- 4
+Convert (ABCD)<sub>16</sub> to Octal?
+
+[A] (125715)<sub>8</sub>
+[B] (125716)<sub>8</sub>
+[C] (125717)<sub>8</sub>
+A
+~
+using Nibble grouping for binary, and then rouping 3-bits for octal
+
+     (A    B    C    D)<sub>16</sub>
+   = (1010 1011 1100 1101)<sub>2</sub>      [Replace each nibble by hex digit]
+   = (1010101111001101)<sub>2</sub>
+   = (  1 010 101 111 001 101)<sub>2</sub>  [Regroup 3-bits starting from LSB]    
+   = (001 010 101 111 001 101)<sub>2</sub>
+   = (  1   2   5   7   1   5)<sub>8</sub>  [Replace each 3-bits grop by octal digit]
+   = (125715)<sub>8</sub>
+~
+- 5
+Convert (765)<sub>8</sub> to Hexa-Decimal?
+
+[A] (5F1)<sub>16</sub>
+[B] (1F5)<sub>16</sub>
+[C] (1E4)<sub>16</sub>
+B
+~
+using Nibble grouping for binary, and then rouping 3-bits for octal
+
+     (7   6   5)<sub>8</sub>
+   = (111 110 101)<sub>2</sub>      [Replace each octal digit by 3-bit binary]
+   = (111110101)<sub>2</sub>
+   = (1 1111 0101)<sub>2</sub>      [Regroup nibbles starting from LSB]    
+   = (00001 1111 0101)<sub>2</sub>
+   = (1     F    5)<sub>16</sub>     [Replace each nibble by hexa-decimal digit]
+   = (1F5)<sub>16</sub>
+~
+- 6
+Choose the correct decimal equivalent for 4 bit signed binary number 1111
+
+[A] -1
+[B] +1
+[C] 0
+A
+~
+The MSB gives the sign (0 = positive, 1 = negative).
+~
+- 7
+Choose the correct decimal equivalent for one's compliment of binary number 1101
+
+[A] 10
+[B] 1110
+[C] 1101
+A
+~
+The one's compliment simply reverse bits 1 ->0 and 0 -> 1
+~
+- 8
+Choose the correct decimal equivalent for two's compliment of binary number 101
+
+[A] 010
+[B] 011
+[C] 1101
+B
+~
+The two's compliment adds 1 to one's compliment of the number.
+~
+- 9
+Which of these is not equal to zero in signed binary numbers
+
+[A] 1000000
+[B] 1111111
+[C] 0111110
+C
+~
+In signed binary representations, the 0 can be expressed as +0 and -0.
+The MSB indicates the sign.
+~
