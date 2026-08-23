@@ -61,22 +61,16 @@
 		
 	function openQ(category, topic, file){
 		var langOption = "en-US";
-		if(parent){
-			var data_path = getLocationPath() + file;
-			if(file.match(/.pdf$/)){
-				parent.openInline(encodeURI(data_path)+"#toolbar=0&navpanes=0");
-			}else{
-				var abs_path = getLocationPath() + 'quiz.html?&topic=' + topic + '&category=' + category + '&data=' + data_path;
-				parent.openInline(abs_path);
-			}
-		}else{	
-			var data_path = getLocationPath() + file;
-			if(file.match(/.pdf$/)){
+		var data_path = getLocationPath() + file;
+		if(file.match(/.pdf$/)){
+			parent ? 
+				parent.openInline(encodeURI(data_path)+"#toolbar=0&navpanes=0"):
 				window.open(encodeURI(data_path)+"#toolbar=0&navpanes=0");
-			}else{
-				var abs_path = getLocationPath() + 'quiz.html?&topic=' + topic + '&category=' + category + '&data=' + data_path;
+		}else{
+			var abs_path = getLocationPath() + 'quiz.html?&topic=' + topic + '&category=' + category + '&data=' + data_path;
+			parent ? 
+				parent.openInline(abs_path) :
 				window.open(abs_path, "_blank");
-			}
 		}
 	}
 	</script>
