@@ -61,7 +61,7 @@
 		
 	function openQ(category, topic, file){
 		var langOption = "en-US";
-		var data_path = getLocationPath() + file;
+		var data_path = file.match(/^http/) ? file : getLocationPath() + file;
 		if(file.match(/.pdf$/)){
 			parent ? 
 				parent.openInline(encodeURI(data_path)+"#toolbar=0&navpanes=0"):
