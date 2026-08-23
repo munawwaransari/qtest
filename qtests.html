@@ -15,12 +15,12 @@
 	  var category = getParamValue("category") || "bca";
 	  
 	  var toggler = document.getElementsByClassName("caret");
-    for (var i = 0; i < toggler.length; i++) {
-        toggler[i].addEventListener("click", function() {
-            this.parentElement.querySelector(".nested").classList.toggle("active");
-            this.classList.toggle("caret-down");
-        });
-    }
+	  for (var i = 0; i < toggler.length; i++) {
+			toggler[i].addEventListener("click", function() {
+				this.parentElement.querySelector(".nested").classList.toggle("active");
+				this.classList.toggle("caret-down");
+			});
+	  }
 	  var cat_data = {};
 	  
 	  loadHtmlData(getLocationPath()+"data/"+category+".csv", function(res){
@@ -30,7 +30,12 @@
 	        if(cat && cat.length > 0){
 	           var cdata = cat.split(",");
 	           if(cdata && cdata.length > 2){
-	             cat_data[cdata[1]] = { "cat": cdata[0], "file": cdata[2] }; 
+				    if(cdata[1] == "{filename}"){
+						var fname = cdata[2].split('/'); 
+						cdata[1] = fname[fname.length-1];
+						cdata[0] = "";
+					}
+					cat_data[cdata[1]] = { "cat": cdata[0], "file": cdata[2] }; 
 	             //console.log(cat_data[cdata[1]]);
 	           }
 	        }
@@ -58,12 +63,20 @@
 		var langOption = "en-US";
 		if(parent){
 			var data_path = getLocationPath() + file;
-			var abs_path = getLocationPath() + 'quiz.html?&topic=' + topic + '&category=' + category + '&data=' + data_path;
-			parent.openInline(abs_path);
+			if(file.match(/.pdf$/)){
+				parent.openInline(encodeURI(data_path)+"#toolbar=0&navpanes=0");
+			}else{
+				var abs_path = getLocationPath() + 'quiz.html?&topic=' + topic + '&category=' + category + '&data=' + data_path;
+				parent.openInline(abs_path);
+			}
 		}else{	
 			var data_path = getLocationPath() + file;
-			var abs_path = getLocationPath() + 'quiz.html?&topic=' + topic + '&category=' + category + '&data=' + data_path;
-			window.open(abs_path, "_blank");
+			if(file.match(/.pdf$/)){
+				window.open(encodeURI(data_path)+"#toolbar=0&navpanes=0");
+			}else{
+				var abs_path = getLocationPath() + 'quiz.html?&topic=' + topic + '&category=' + category + '&data=' + data_path;
+				window.open(abs_path, "_blank");
+			}
 		}
 	}
 	</script>
